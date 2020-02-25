@@ -8,12 +8,13 @@ export class FBApplicationObjectType extends FBApplicationObjectTypeBase
 
 
 //#region Generated Reference Properties
-
 //#region fBApplicationObjects Prop
-        fBApplicationObjects : FBApplicationObjectBase[];
+fBApplicationObjects : FBApplicationObjectBase[];
 //#endregion fBApplicationObjects Prop
 
 //#endregion Generated Reference Properties
+
+
 
 
 

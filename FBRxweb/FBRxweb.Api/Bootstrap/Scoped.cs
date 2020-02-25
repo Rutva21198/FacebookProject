@@ -8,7 +8,13 @@ using RxWeb.Core;
 using FBRxweb.UnitOfWork.DbEntityAudit;
 using FBRxweb.BoundedContext.Main;
 using FBRxweb.UnitOfWork.Main;
-#endregion Namespace
+using FBRxweb.Domain.FacebookUserDetailModule;
+            using FBRxweb.Domain.FacebookUserWorkModule;
+            using FBRxweb.Domain.EducationDetailModule;
+            #endregion Namespace
+
+
+
 
 
 
@@ -33,7 +39,25 @@ namespace FBRxweb.Api.Bootstrap
              
             serviceCollection.AddScoped<IFacebookContext, FacebookContext>();
             serviceCollection.AddScoped<IFacebookUow, FacebookUow>();
+                        serviceCollection.AddScoped<IProfileViewContext, ProfileViewContext>();
+            serviceCollection.AddScoped<IProfileViewUow, ProfileViewUow>();
+                        serviceCollection.AddScoped<IProfileViewContext, ProfileViewContext>();
+            serviceCollection.AddScoped<IProfileViewUow, ProfileViewUow>();
+                        serviceCollection.AddScoped<IProfileViewContext, ProfileViewContext>();
+            serviceCollection.AddScoped<IProfileViewUow, ProfileViewUow>();
+                        serviceCollection.AddScoped<IFacebookUserDetailContext, FacebookUserDetailContext>();
+            serviceCollection.AddScoped<IFacebookUserDetailUow, FacebookUserDetailUow>();
+                        serviceCollection.AddScoped<IFacebookUserWorkContext, FacebookUserWorkContext>();
+            serviceCollection.AddScoped<IFacebookUserWorkUow, FacebookUserWorkUow>();
+                        serviceCollection.AddScoped<IEducationDetailContext, EducationDetailContext>();
+            serviceCollection.AddScoped<IEducationDetailUow, EducationDetailUow>();
             #endregion ContextService
+
+
+
+
+
+
 
 
 
@@ -41,7 +65,16 @@ namespace FBRxweb.Api.Bootstrap
 
             #region DomainService
 
+            
+            serviceCollection.AddScoped<IFacebookUserDetailDomain, FacebookUserDetailDomain>();
+            
+            serviceCollection.AddScoped<IFacebookUserWorkDomain, FacebookUserWorkDomain>();
+            
+            serviceCollection.AddScoped<IEducationDetailDomain, EducationDetailDomain>();
             #endregion DomainService
+
+
+
         }
     }
 }

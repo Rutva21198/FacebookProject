@@ -1,12 +1,5 @@
 import {FacebookUserBase} from '../database-models/facebook-user-base';
 import {FBApplicationObjectBase} from '../database-models/f-b-application-object-base';
-import {LogActivityBase} from '../database-models/log-activity-base';
-import {PostCommentBase} from '../database-models/post-comment-base';
-import {PostLikeBase} from '../database-models/post-like-base';
-import {PostShareBase} from '../database-models/post-share-base';
-import {ProfilePhotoBase} from '../database-models/profile-photo-base';
-import {FacebookUserDetailBase} from '../database-models/facebook-user-detail-base';
-import {FacebookUserWorkBase} from '../database-models/facebook-user-work-base';
 import {PostBase} from '../database-models/post-base';
 import {PostMessageBase} from '../database-models/post-message-base';
 import {ChatMediaBase} from '../database-models/chat-media-base';
@@ -15,6 +8,13 @@ import {ChatMessageBase} from '../database-models/chat-message-base';
 import {ChatMessages1Base} from '../database-models/chat-messages-1-base';
 import {CoverPhotoBase} from '../database-models/cover-photo-base';
 import {EducationDetailBase} from '../database-models/education-detail-base';
+import {LogActivityBase} from '../database-models/log-activity-base';
+import {PostCommentBase} from '../database-models/post-comment-base';
+import {PostLikeBase} from '../database-models/post-like-base';
+import {PostShareBase} from '../database-models/post-share-base';
+import {ProfilePhotoBase} from '../database-models/profile-photo-base';
+import {FacebookUserDetailBase} from '../database-models/facebook-user-detail-base';
+import {FacebookUserWorkBase} from '../database-models/facebook-user-work-base';
 //Generated Imports
 export class FacebookUser extends FacebookUserBase 
 {
@@ -26,27 +26,6 @@ export class FacebookUser extends FacebookUserBase
 //#region fBApplicationObject Prop
 fBApplicationObject : FBApplicationObjectBase;
 //#endregion fBApplicationObject Prop
-//#region logActivities Prop
-logActivities : LogActivityBase[];
-//#endregion logActivities Prop
-//#region postComments Prop
-postComments : PostCommentBase[];
-//#endregion postComments Prop
-//#region postLikes Prop
-postLikes : PostLikeBase[];
-//#endregion postLikes Prop
-//#region postShares Prop
-postShares : PostShareBase[];
-//#endregion postShares Prop
-//#region profilePhotos Prop
-profilePhotos : ProfilePhotoBase[];
-//#endregion profilePhotos Prop
-//#region facebookUserDetails Prop
-facebookUserDetails : FacebookUserDetailBase[];
-//#endregion facebookUserDetails Prop
-//#region facebookUserWorks Prop
-facebookUserWorks : FacebookUserWorkBase[];
-//#endregion facebookUserWorks Prop
 //#region posts Prop
 posts : PostBase[];
 //#endregion posts Prop
@@ -71,8 +50,31 @@ coverPhotos : CoverPhotoBase[];
 //#region educationDetails Prop
 educationDetails : EducationDetailBase[];
 //#endregion educationDetails Prop
+//#region logActivities Prop
+logActivities : LogActivityBase[];
+//#endregion logActivities Prop
+//#region postComments Prop
+postComments : PostCommentBase[];
+//#endregion postComments Prop
+//#region postLikes Prop
+postLikes : PostLikeBase[];
+//#endregion postLikes Prop
+//#region postShares Prop
+postShares : PostShareBase[];
+//#endregion postShares Prop
+//#region profilePhotos Prop
+profilePhotos : ProfilePhotoBase[];
+//#endregion profilePhotos Prop
+//#region facebookUserDetails Prop
+facebookUserDetails : FacebookUserDetailBase[];
+//#endregion facebookUserDetails Prop
+//#region facebookUserWorks Prop
+facebookUserWorks : FacebookUserWorkBase[];
+//#endregion facebookUserWorks Prop
 
 //#endregion Generated Reference Properties
+
+
 
 
 

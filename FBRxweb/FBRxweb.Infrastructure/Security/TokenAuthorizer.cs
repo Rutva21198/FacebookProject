@@ -31,7 +31,7 @@ namespace FBRxweb.Infrastructure.Security
 
         public Task MessageReceived(MessageReceivedContext context)
         {
-            var principal = this.ValidateTokenAsync(context.HttpContext).Result;
+            ClaimsPrincipal principal = this.ValidateTokenAsync(context.HttpContext).Result;
             if (principal != null)
             {
                 context.Principal = principal;

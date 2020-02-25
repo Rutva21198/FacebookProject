@@ -44,19 +44,19 @@ namespace FBRxweb.Models.Main
 
         public virtual FBApplicationObjectType FBApplicationObjectType { get; set; }
 
-		#region FacebookUsers Annotations
-
-        [InverseProperty("FBApplicationObject")]
-		#endregion FacebookUsers Annotations
-
-        public virtual ICollection<FacebookUser> FacebookUsers { get; set; }
-
 		#region FacebookUserDetails Annotations
 
         [InverseProperty("FBApplicationObject")]
 		#endregion FacebookUserDetails Annotations
 
         public virtual ICollection<FacebookUserDetail> FacebookUserDetails { get; set; }
+
+		#region FacebookUsers Annotations
+
+        [InverseProperty("FBApplicationObject")]
+		#endregion FacebookUsers Annotations
+
+        public virtual ICollection<FacebookUser> FacebookUsers { get; set; }
 
 		#region Posts Annotations
 
@@ -82,8 +82,8 @@ namespace FBRxweb.Models.Main
 
         public FBApplicationObject()
         {
-			FacebookUsers = new HashSet<FacebookUser>();
 			FacebookUserDetails = new HashSet<FacebookUserDetail>();
+			FacebookUsers = new HashSet<FacebookUser>();
 			Posts = new HashSet<Post>();
 			ChatMedia = new HashSet<ChatMedia>();
 			EducationDetails = new HashSet<EducationDetail>();

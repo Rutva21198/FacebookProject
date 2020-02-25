@@ -96,55 +96,6 @@ namespace FBRxweb.Models.Main
 
         public virtual FBApplicationObject FBApplicationObject { get; set; }
 
-		#region LogActivities Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion LogActivities Annotations
-
-        public virtual ICollection<LogActivity> LogActivities { get; set; }
-
-		#region PostComments Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion PostComments Annotations
-
-        public virtual ICollection<PostComment> PostComments { get; set; }
-
-		#region PostLikes Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion PostLikes Annotations
-
-        public virtual ICollection<PostLike> PostLikes { get; set; }
-
-		#region PostShares Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion PostShares Annotations
-
-        public virtual ICollection<PostShare> PostShares { get; set; }
-
-		#region ProfilePhotos Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion ProfilePhotos Annotations
-
-        public virtual ICollection<ProfilePhoto> ProfilePhotos { get; set; }
-
-		#region FacebookUserDetails Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion FacebookUserDetails Annotations
-
-        public virtual ICollection<FacebookUserDetail> FacebookUserDetails { get; set; }
-
-		#region FacebookUserWorks Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion FacebookUserWorks Annotations
-
-        public virtual ICollection<FacebookUserWork> FacebookUserWorks { get; set; }
-
 		#region Posts Annotations
 
         [InverseProperty("FacebookUser")]
@@ -201,16 +152,58 @@ namespace FBRxweb.Models.Main
 
         public virtual ICollection<EducationDetail> EducationDetails { get; set; }
 
+		#region LogActivities Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion LogActivities Annotations
+
+        public virtual ICollection<LogActivity> LogActivities { get; set; }
+
+		#region PostComments Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion PostComments Annotations
+
+        public virtual ICollection<PostComment> PostComments { get; set; }
+
+		#region PostLikes Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion PostLikes Annotations
+
+        public virtual ICollection<PostLike> PostLikes { get; set; }
+
+		#region PostShares Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion PostShares Annotations
+
+        public virtual ICollection<PostShare> PostShares { get; set; }
+
+		#region ProfilePhotos Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion ProfilePhotos Annotations
+
+        public virtual ICollection<ProfilePhoto> ProfilePhotos { get; set; }
+
+		#region FacebookUserDetails Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion FacebookUserDetails Annotations
+
+        public virtual ICollection<FacebookUserDetail> FacebookUserDetails { get; set; }
+
+		#region FacebookUserWorks Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion FacebookUserWorks Annotations
+
+        public virtual ICollection<FacebookUserWork> FacebookUserWorks { get; set; }
+
 
         public FacebookUser()
         {
-			LogActivities = new HashSet<LogActivity>();
-			PostComments = new HashSet<PostComment>();
-			PostLikes = new HashSet<PostLike>();
-			PostShares = new HashSet<PostShare>();
-			ProfilePhotos = new HashSet<ProfilePhoto>();
-			FacebookUserDetails = new HashSet<FacebookUserDetail>();
-			FacebookUserWorks = new HashSet<FacebookUserWork>();
 			Posts = new HashSet<Post>();
 			PostMessages = new HashSet<PostMessage>();
 			ChatMedia = new HashSet<ChatMedia>();
@@ -219,6 +212,13 @@ namespace FBRxweb.Models.Main
 			ChatMessages1 = new HashSet<ChatMessage>();
 			CoverPhotos = new HashSet<CoverPhoto>();
 			EducationDetails = new HashSet<EducationDetail>();
+			LogActivities = new HashSet<LogActivity>();
+			PostComments = new HashSet<PostComment>();
+			PostLikes = new HashSet<PostLike>();
+			PostShares = new HashSet<PostShare>();
+			ProfilePhotos = new HashSet<ProfilePhoto>();
+			FacebookUserDetails = new HashSet<FacebookUserDetail>();
+			FacebookUserWorks = new HashSet<FacebookUserWork>();
         }
 	}
 }
