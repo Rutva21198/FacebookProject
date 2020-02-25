@@ -2131,7 +2131,10 @@
         },
         "runtime": {
           "bin/placeholder/FBRxweb.Domain.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "FBRxweb.Infrastructure/1.0.0": {
         "type": "project",
@@ -2151,7 +2154,10 @@
         },
         "runtime": {
           "bin/placeholder/FBRxweb.Infrastructure.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "FBRxweb.Models/1.0.0": {
         "type": "project",
@@ -7215,11 +7221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj",
+      "projectUniqueName": "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj",
       "projectName": "FBRxweb.Api",
-      "projectPath": "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj",
+      "projectPath": "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj",
       "packagesPath": "C:\\Users\\radix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.Api\\obj\\",
+      "outputPath": "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\radix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7235,20 +7241,20 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
-              "projectPath": "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj"
+            "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
+              "projectPath": "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj"
             },
-            "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj": {
-              "projectPath": "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj"
+            "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj": {
+              "projectPath": "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj"
             },
-            "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj"
+            "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj"
             },
-            "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
-              "projectPath": "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj"
+            "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
+              "projectPath": "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj"
             },
-            "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj": {
-              "projectPath": "C:\\Users\\radix\\source\\repos\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj"
+            "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj": {
+              "projectPath": "C:\\Users\\radix\\Desktop\\FacebookProject\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj"
             }
           }
         }

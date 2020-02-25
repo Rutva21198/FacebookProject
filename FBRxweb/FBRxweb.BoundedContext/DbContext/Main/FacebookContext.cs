@@ -17,7 +17,12 @@ namespace FBRxweb.BoundedContext.Main
 
             #region DbSets
             		public DbSet<FacebookUser> FacebookUser { get; set; }
+            		public DbSet<ChatMedia> ChatMedia { get; set; }
+		            public DbSet<ChatMessage> ChatMessage { get; set; }
+            		public DbSet<vAllOnlineUserList> vAllOnlineUserList { get; set; }
             #endregion DbSets
+
+
 
 
     }

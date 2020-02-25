@@ -13,9 +13,8 @@ export class FBApplicationObject extends FBApplicationObjectBase
 
 
 //#region Generated Reference Properties
-
 //#region fBApplicationObjectType Prop
-        fBApplicationObjectType : FBApplicationObjectTypeBase;
+fBApplicationObjectType : FBApplicationObjectTypeBase;
 //#endregion fBApplicationObjectType Prop
 //#region facebookUsers Prop
 facebookUsers : FacebookUserBase[];
@@ -34,6 +33,7 @@ educationDetails : EducationDetailBase[];
 //#endregion educationDetails Prop
 
 //#endregion Generated Reference Properties
+
 
 
 

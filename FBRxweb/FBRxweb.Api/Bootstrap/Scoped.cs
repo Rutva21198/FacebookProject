@@ -8,7 +8,9 @@ using RxWeb.Core;
 using FBRxweb.UnitOfWork.DbEntityAudit;
 using FBRxweb.BoundedContext.Main;
 using FBRxweb.UnitOfWork.Main;
-#endregion Namespace
+using FBRxweb.Domain.FacebookModule;
+            #endregion Namespace
+
 
 
 
@@ -41,7 +43,13 @@ namespace FBRxweb.Api.Bootstrap
 
             #region DomainService
 
+            
+            serviceCollection.AddScoped<IFacebookUserDomain, FacebookUserDomain>();
+            
+            serviceCollection.AddScoped<IFacebookUserDomainDomain, FacebookUserDomainDomain>();
             #endregion DomainService
+
+
         }
     }
 }
