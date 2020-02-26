@@ -8,7 +8,10 @@ using RxWeb.Core;
 using FBRxweb.UnitOfWork.DbEntityAudit;
 using FBRxweb.BoundedContext.Main;
 using FBRxweb.UnitOfWork.Main;
-using FBRxweb.Domain.FacebookModule;
+using FBRxweb.Domain.FacebookUserModule;
+using FBRxweb.Domain.UserChatModule;
+ using FBRxweb.Domain.ViewOnlineUserModule;
+
             #endregion Namespace
 
 
@@ -32,23 +35,32 @@ namespace FBRxweb.Api.Bootstrap
 
             serviceCollection.AddScoped<ILoginContext, LoginContext>();
             serviceCollection.AddScoped<ILoginUow, LoginUow>();
-             
-            serviceCollection.AddScoped<IFacebookContext, FacebookContext>();
-            serviceCollection.AddScoped<IFacebookUow, FacebookUow>();
+                        serviceCollection.AddScoped<IFacebookUserContext, FacebookUserContext>();
+            serviceCollection.AddScoped<IFacebookUserUow, FacebookUserUow>();
+                       
+                        serviceCollection.AddScoped<IUserChatContext, UserChatContext>();
+            serviceCollection.AddScoped<IUserChatUow, UserChatUow>();
+                        serviceCollection.AddScoped<IViewOnlineUserContext, ViewOnlineUserContext>();
+            serviceCollection.AddScoped<IViewOnlineUserUow, ViewOnlineUserUow>();
             #endregion ContextService
 
 
-
-
-
-            #region DomainService
-
-            
+              #region DomainService
+   
             serviceCollection.AddScoped<IFacebookUserDomain, FacebookUserDomain>();
             
-            serviceCollection.AddScoped<IFacebookUserDomainDomain, FacebookUserDomainDomain>();
-            #endregion DomainService
+            serviceCollection.AddScoped<IChatMessageDomain, ChatMessageDomain>();
+            
+            serviceCollection.AddScoped<IChatMediaDomain, ChatMediaDomain>();
+            
+            serviceCollection.AddScoped<IChatMediaDomain, ChatMediaDomain>();
+             serviceCollection.AddScoped<IChatMessageDomain, ChatMessageDomain>();
+            
+            serviceCollection.AddScoped<IChatMediaDomain, ChatMediaDomain>();
 
+            serviceCollection.AddScoped<IvOnlineUserListDomain, vOnlineUserListDomain>();
+            
+            #endregion DomainService
 
         }
     }

@@ -29,5 +29,5 @@ export {FacebookUserBase} from './facebook-user-base';;
 export {FBApplicationObjectTypeBase} from './f-b-application-object-type-base';;
 export {LogActivityBase} from './log-activity-base';;
 export {PostCommentBase} from './post-comment-base';;
-export {vAllOnlineUserListBase} from './v-all-online-user-list-base';;
+export {vOnlineUserListBase} from './v-online-user-list-base';;
 export {vUserBase} from './v-user-base';;

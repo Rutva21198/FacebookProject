@@ -20,4 +20,8 @@ facebookUserDetails : FacebookUserDetailBase[];
 
 
 
+
+
+
+
 }

@@ -29,5 +29,5 @@ export {FacebookUser} from './facebook-user';;
 export {FBApplicationObjectType} from './f-b-application-object-type';;
 export {LogActivity} from './log-activity';;
 export {PostComment} from './post-comment';;
-export {vAllOnlineUserList} from './v-all-online-user-list';;
+export {vOnlineUserList} from './v-online-user-list';;
 export {vUser} from './v-user';;

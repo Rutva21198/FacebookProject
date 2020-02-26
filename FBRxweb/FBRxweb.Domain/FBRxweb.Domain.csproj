@@ -7,6 +7,12 @@
     <ProjectReference Include="..\FBRxweb.Infrastructure\FBRxweb.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UserChatDomain\" />
+    <Folder Include="UserChatUowDomain\" />
+    <Folder Include="ViewOnlineUserDomain\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>

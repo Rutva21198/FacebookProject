@@ -5,23 +5,24 @@ using RxWeb.Core;
 using FBRxweb.UnitOfWork.Main;
 using FBRxweb.Models.Main;
 
-namespace FBRxweb.Domain.FacebookModule
+namespace FBRxweb.Domain.FacebookUserModule
 {
     public class FacebookUserDomain : IFacebookUserDomain
     {
-        public FacebookUserDomain(IFacebookUow uow) {
+        public FacebookUserDomain(IFacebookUserUow uow) {
             this.Uow = uow;
         }
 
-        public Task<object> GetAsync(FacebookUser parameters)
+        public async Task<object> GetAsync(FacebookUser parameters)
         {
-            throw new NotImplementedException();
+           return  await Uow.Repository<FacebookUser>().AllAsync();
+            //throw new NotImplementedException();
         }
 
-        public Task<object> GetBy(FacebookUser parameters)
+        public async Task<object> GetBy(FacebookUser parameters)
         {
-            throw new NotImplementedException();
-
+            return await Uow.Repository<FacebookUser>().SingleOrDefaultAsync(t => t.Email == parameters.Email && t.Password == parameters.Password);
+           // throw new NotImplementedException();
         }
         
 
@@ -32,6 +33,7 @@ namespace FBRxweb.Domain.FacebookModule
 
         public async Task AddAsync(FacebookUser entity)
         {
+           
             await Uow.RegisterNewAsync(entity);
             await Uow.CommitAsync();
         }
@@ -57,10 +59,10 @@ namespace FBRxweb.Domain.FacebookModule
             throw new NotImplementedException();
         }
 
-        public IFacebookUow Uow { get; set; }
+        public IFacebookUserUow Uow { get; set; }
 
         private HashSet<string> ValidationMessages { get; set; } = new HashSet<string>();
     }
 
-    public interface IFacebookUserDomain : ICoreDomain<FacebookUser, FacebookUser> { }
+    public interface IFacebookUserDomain : ICoreDomain<FacebookUser,FacebookUser> { }
 }
