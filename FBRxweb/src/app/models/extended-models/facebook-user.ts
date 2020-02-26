@@ -7,6 +7,9 @@ import {PostShareBase} from '../database-models/post-share-base';
 import {ProfilePhotoBase} from '../database-models/profile-photo-base';
 import {FacebookUserDetailBase} from '../database-models/facebook-user-detail-base';
 import {FacebookUserWorkBase} from '../database-models/facebook-user-work-base';
+import {PostMessageLikeBase} from '../database-models/post-message-like-base';
+import {PostMessageCommentBase} from '../database-models/post-message-comment-base';
+import {PostMessageShareBase} from '../database-models/post-message-share-base';
 import {PostBase} from '../database-models/post-base';
 import {PostMessageBase} from '../database-models/post-message-base';
 import {ChatMediaBase} from '../database-models/chat-media-base';
@@ -47,6 +50,18 @@ facebookUserDetails : FacebookUserDetailBase[];
 //#region facebookUserWorks Prop
 facebookUserWorks : FacebookUserWorkBase[];
 //#endregion facebookUserWorks Prop
+
+//#region postMessageLikes Prop
+        postMessageLikes : PostMessageLikeBase[];
+//#endregion postMessageLikes Prop
+
+//#region postMessageComments Prop
+        postMessageComments : PostMessageCommentBase[];
+//#endregion postMessageComments Prop
+
+//#region postMessageShares Prop
+        postMessageShares : PostMessageShareBase[];
+//#endregion postMessageShares Prop
 //#region posts Prop
 posts : PostBase[];
 //#endregion posts Prop
@@ -73,6 +88,7 @@ educationDetails : EducationDetailBase[];
 //#endregion educationDetails Prop
 
 //#endregion Generated Reference Properties
+
 
 
 

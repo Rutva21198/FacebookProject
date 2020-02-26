@@ -17,8 +17,11 @@ namespace FBRxweb.BoundedContext.Main
 
             #region DbSets
                 public DbSet<FacebookUser>FacebookUsers { get; set; }
-        
-            #endregion DbSets
+        public DbSet<PostComment> PostComment { get; set; }
+        public DbSet<PostLike> PostLike { get; set; }
+        public DbSet<PostShare> PostShare { get; set; }
+
+        #endregion DbSets
 
     }
 

@@ -12,7 +12,13 @@ using FBRxweb.Domain.FacebookUserModule;
 using FBRxweb.Domain.UserChatModule;
  using FBRxweb.Domain.ViewOnlineUserModule;
 
+            using FBRxweb.Domain.PostModule;
+            using FBRxweb.Domain.PostDetailModule;
+            using FBRxweb.Domain.PostMessageDetailModule;
             #endregion Namespace
+
+
+
 
 
 
@@ -42,7 +48,16 @@ namespace FBRxweb.Api.Bootstrap
             serviceCollection.AddScoped<IUserChatUow, UserChatUow>();
                         serviceCollection.AddScoped<IViewOnlineUserContext, ViewOnlineUserContext>();
             serviceCollection.AddScoped<IViewOnlineUserUow, ViewOnlineUserUow>();
+                        serviceCollection.AddScoped<IPostContext, PostContext>();
+            serviceCollection.AddScoped<IPostUow, PostUow>();
+                        serviceCollection.AddScoped<IPostDetailContext, PostDetailContext>();
+            serviceCollection.AddScoped<IPostDetailUow, PostDetailUow>();
+                        serviceCollection.AddScoped<IPostMessageDetailContext, PostMessageDetailContext>();
+            serviceCollection.AddScoped<IPostMessageDetailUow, PostMessageDetailUow>();
             #endregion ContextService
+
+
+
 
 
               #region DomainService
@@ -60,7 +75,31 @@ namespace FBRxweb.Api.Bootstrap
 
             serviceCollection.AddScoped<IvOnlineUserListDomain, vOnlineUserListDomain>();
             
+            
+            serviceCollection.AddScoped<IPostDomain, PostDomain>();
+            
+            serviceCollection.AddScoped<IPostMessageDomain, PostMessageDomain>();
+            
+            serviceCollection.AddScoped<IPostLikeDomain, PostLikeDomain>();
+            
+            serviceCollection.AddScoped<IPostCommentDomain, PostCommentDomain>();
+            
+            serviceCollection.AddScoped<IPostShareDomain, PostShareDomain>();
+            
+            serviceCollection.AddScoped<IPostMessageShareDomain, PostMessageShareDomain>();
+            
+            serviceCollection.AddScoped<IPostMessageLikeDomain, PostMessageLikeDomain>();
+            
+            serviceCollection.AddScoped<IPostMessageCommentDomain, PostMessageCommentDomain>();
             #endregion DomainService
+
+
+
+
+
+
+
+
 
         }
     }
