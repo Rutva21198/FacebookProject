@@ -7,6 +7,8 @@ using RxWeb.Core.Security;
 using RxWeb.Core.Data;
 using FBRxweb.Models.ViewModels;
 using FBRxweb.BoundedContext.SqlContext;
+using System;
+
 namespace FBRxweb.Api.Controllers.UserChatUowModule
 {
     [ApiController]
@@ -19,13 +21,15 @@ namespace FBRxweb.Api.Controllers.UserChatUowModule
         }
 
 		[HttpPost]
-        public async Task<IActionResult> Post([FromBody]Dictionary<string,string> searchParams)
+        public async Task<Object> Post([FromBody]Dictionary<string,string> searchParams)
         {
             var spParameters = new SqlParameter[2];
             spParameters[0] = new SqlParameter() { ParameterName = "sender", Value = searchParams["sender"] };
             spParameters[1] = new SqlParameter() { ParameterName = "receiver", Value = searchParams["receiver"] };
             var result = await DbContextManager.StoreProc<StoreProcResult>("[dbo].spOneToOneChats", spParameters);
-            return Ok(result.SingleOrDefault()?.Result);
+            //return Ok(result.ToList());
+            return await Task.FromResult(result);
         }
+
     }
 }

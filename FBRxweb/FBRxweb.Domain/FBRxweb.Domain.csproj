@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="UserChatDomain\" />
-    <Folder Include="UserChatUowDomain\" />
     <Folder Include="ViewOnlineUserDomain\" />
   </ItemGroup>
 

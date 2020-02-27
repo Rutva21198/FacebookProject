@@ -18,10 +18,10 @@ namespace FBRxweb.Domain.PostDetailModule
             throw new NotImplementedException();
         }
 
-        public  Task<object> GetBy(PostComment parameters)
+        public async Task<object> GetBy(PostComment parameters)
         {
-            throw new NotImplementedException();
-            //return await Uow.Repository<FacebookUser>().SingleOrDefaultAsync(t => t.PostId == parameters.PostId);
+            //throw new NotImplementedException();
+            return await Uow.Repository<PostComment>().FindByAsync(t => t.PostId == parameters.PostId);
         }
         
 

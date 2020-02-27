@@ -12,16 +12,11 @@ using FBRxweb.Domain.FacebookUserModule;
 using FBRxweb.Domain.UserChatModule;
  using FBRxweb.Domain.ViewOnlineUserModule;
 
-            using FBRxweb.Domain.PostModule;
-            using FBRxweb.Domain.PostDetailModule;
-            using FBRxweb.Domain.PostMessageDetailModule;
+using FBRxweb.Domain.PostModule;
+using FBRxweb.Domain.PostDetailModule;
+using FBRxweb.Domain.PostMessageDetailModule;
+
             #endregion Namespace
-
-
-
-
-
-
 
 namespace FBRxweb.Api.Bootstrap
 {
@@ -54,10 +49,8 @@ namespace FBRxweb.Api.Bootstrap
             serviceCollection.AddScoped<IPostDetailUow, PostDetailUow>();
                         serviceCollection.AddScoped<IPostMessageDetailContext, PostMessageDetailContext>();
             serviceCollection.AddScoped<IPostMessageDetailUow, PostMessageDetailUow>();
+             
             #endregion ContextService
-
-
-
 
 
               #region DomainService
@@ -91,20 +84,10 @@ namespace FBRxweb.Api.Bootstrap
             serviceCollection.AddScoped<IPostMessageLikeDomain, PostMessageLikeDomain>();
             
             serviceCollection.AddScoped<IPostMessageCommentDomain, PostMessageCommentDomain>();
+       
             #endregion DomainService
-
-
-
-
-
-
-
-
 
         }
     }
 }
-
-
-
 

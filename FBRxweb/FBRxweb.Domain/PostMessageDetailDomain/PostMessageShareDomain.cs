@@ -18,9 +18,10 @@ namespace FBRxweb.Domain.PostMessageDetailModule
             throw new NotImplementedException();
         }
 
-        public Task<object> GetBy(PostMessageShare parameters)
+        public async  Task<object> GetBy(PostMessageShare parameters)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return await Uow.Repository<PostMessageShare>().FindByAsync(t => t.PostMessageId == parameters.PostMessageId);
         }
         
 

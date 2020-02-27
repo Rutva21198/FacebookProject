@@ -13,14 +13,16 @@ namespace FBRxweb.Domain.PostModule
             this.Uow = uow;
         }
 
-        public Task<object> GetAsync(Post parameters)
+        public async Task<object> GetAsync(Post parameters)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return await Uow.Repository<Post>().AllAsync();
         }
 
-        public Task<object> GetBy(Post parameters)
+        public async Task<object> GetBy(Post parameters)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return await Uow.Repository<Post>().FindByAsync(t => t.UserId == parameters.UserId);
         }
         
 

@@ -50,17 +50,14 @@ facebookUserDetails : FacebookUserDetailBase[];
 //#region facebookUserWorks Prop
 facebookUserWorks : FacebookUserWorkBase[];
 //#endregion facebookUserWorks Prop
-
 //#region postMessageLikes Prop
-        postMessageLikes : PostMessageLikeBase[];
+postMessageLikes : PostMessageLikeBase[];
 //#endregion postMessageLikes Prop
-
 //#region postMessageComments Prop
-        postMessageComments : PostMessageCommentBase[];
+postMessageComments : PostMessageCommentBase[];
 //#endregion postMessageComments Prop
-
 //#region postMessageShares Prop
-        postMessageShares : PostMessageShareBase[];
+postMessageShares : PostMessageShareBase[];
 //#endregion postMessageShares Prop
 //#region posts Prop
 posts : PostBase[];
@@ -88,6 +85,7 @@ educationDetails : EducationDetailBase[];
 //#endregion educationDetails Prop
 
 //#endregion Generated Reference Properties
+
 
 
 

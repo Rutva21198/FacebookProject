@@ -13,14 +13,16 @@ namespace FBRxweb.Domain.PostDetailModule
             this.Uow = uow;
         }
 
-        public Task<object> GetAsync(PostShare parameters)
+        public  Task<object> GetAsync(PostShare parameters)
         {
             throw new NotImplementedException();
+            
         }
 
-        public Task<object> GetBy(PostShare parameters)
+        public async Task<object> GetBy(PostShare parameters)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return await Uow.Repository<PostShare>().FindByAsync(t => t.PostId == parameters.PostId);
         }
         
 

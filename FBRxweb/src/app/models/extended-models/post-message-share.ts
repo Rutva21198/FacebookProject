@@ -10,12 +10,12 @@ export class PostMessageShare extends PostMessageShareBase
 
 //#region Generated Reference Properties
 //#region facebookUser Prop
-        facebookUser : FacebookUserBase;
+facebookUser : FacebookUserBase;
 //#endregion facebookUser Prop
-
 //#region postMessage Prop
-        postMessage : PostMessageBase;
+postMessage : PostMessageBase;
 //#endregion postMessage Prop
 
 //#endregion Generated Reference Properties
+
 }

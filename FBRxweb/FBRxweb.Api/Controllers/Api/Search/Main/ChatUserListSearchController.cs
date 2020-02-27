@@ -24,6 +24,7 @@ namespace FBRxweb.Api.Controllers.UserChatUowModule
             spParameters[0] = new SqlParameter() { ParameterName = "id", Value = searchParams["id"] };
             var result = await DbContextManager.StoreProc<StoreProcResult>("[dbo].spChatListUsers", spParameters);
             return Ok(result.SingleOrDefault()?.Result);
+            
         }
     }
 }

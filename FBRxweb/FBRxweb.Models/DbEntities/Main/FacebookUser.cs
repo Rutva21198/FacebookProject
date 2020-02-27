@@ -96,153 +96,154 @@ namespace FBRxweb.Models.Main
 
         public virtual FBApplicationObject FBApplicationObject { get; set; }
 
-		#region LogActivities Annotations
+
+
+        #region LogActivities Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion LogActivities Annotations
-
+        #endregion LogActivities Annotations        
         public virtual ICollection<LogActivity> LogActivities { get; set; }
 
-		#region PostComments Annotations
+        #region PostComments Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion PostComments Annotations
+        #endregion PostComments Annotations
 
         public virtual ICollection<PostComment> PostComments { get; set; }
 
-		#region PostLikes Annotations
+        #region PostLikes Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion PostLikes Annotations
+        #endregion PostLikes Annotations
 
         public virtual ICollection<PostLike> PostLikes { get; set; }
 
-		#region PostShares Annotations
+        #region PostShares Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion PostShares Annotations
+        #endregion PostShares Annotations
 
         public virtual ICollection<PostShare> PostShares { get; set; }
 
-		#region ProfilePhotos Annotations
+        #region ProfilePhotos Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion ProfilePhotos Annotations
+        #endregion ProfilePhotos Annotations
 
         public virtual ICollection<ProfilePhoto> ProfilePhotos { get; set; }
 
-		#region FacebookUserDetails Annotations
+        #region FacebookUserDetails Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion FacebookUserDetails Annotations
+        #endregion FacebookUserDetails Annotations
 
         public virtual ICollection<FacebookUserDetail> FacebookUserDetails { get; set; }
 
-		#region FacebookUserWorks Annotations
+        #region FacebookUserWorks Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion FacebookUserWorks Annotations
+        #endregion FacebookUserWorks Annotations
 
         public virtual ICollection<FacebookUserWork> FacebookUserWorks { get; set; }
 
-		#region PostMessageLikes Annotations
+        #region PostMessageLikes Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion PostMessageLikes Annotations
+        #endregion PostMessageLikes Annotations
 
         public virtual ICollection<PostMessageLike> PostMessageLikes { get; set; }
 
-		#region PostMessageComments Annotations
+        #region PostMessageComments Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion PostMessageComments Annotations
+        #endregion PostMessageComments Annotations
 
         public virtual ICollection<PostMessageComment> PostMessageComments { get; set; }
 
-		#region PostMessageShares Annotations
+        #region PostMessageShares Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion PostMessageShares Annotations
+        #endregion PostMessageShares Annotations
 
         public virtual ICollection<PostMessageShare> PostMessageShares { get; set; }
 
-		#region Posts Annotations
+        #region Posts Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion Posts Annotations
+        #endregion Posts Annotations
 
         public virtual ICollection<Post> Posts { get; set; }
 
-		#region PostMessages Annotations
+        #region PostMessages Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion PostMessages Annotations
+        #endregion PostMessages Annotations
 
         public virtual ICollection<PostMessage> PostMessages { get; set; }
 
-		#region ChatMedia Annotations
+        #region ChatMedia Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion ChatMedia Annotations
+        #endregion ChatMedia Annotations
 
         public virtual ICollection<ChatMedia> ChatMedia { get; set; }
 
-		#region ChatMedia1 Annotations
+        #region ChatMedia1 Annotations
 
         [InverseProperty("FacebookUser1")]
-		#endregion ChatMedia1 Annotations
+        #endregion ChatMedia1 Annotations
 
         public virtual ICollection<ChatMedia> ChatMedia1 { get; set; }
 
-		#region ChatMessages Annotations
+        #region ChatMessages Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion ChatMessages Annotations
+        #endregion ChatMessages Annotations
 
         public virtual ICollection<ChatMessage> ChatMessages { get; set; }
 
-		#region ChatMessages1 Annotations
+        #region ChatMessages1 Annotations
 
         [InverseProperty("FacebookUser1")]
-		#endregion ChatMessages1 Annotations
+        #endregion ChatMessages1 Annotations
 
         public virtual ICollection<ChatMessage> ChatMessages1 { get; set; }
 
-		#region CoverPhotos Annotations
+        #region CoverPhotos Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion CoverPhotos Annotations
+        #endregion CoverPhotos Annotations
 
         public virtual ICollection<CoverPhoto> CoverPhotos { get; set; }
 
-		#region EducationDetails Annotations
+        #region EducationDetails Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion EducationDetails Annotations
+        #endregion EducationDetails Annotations
 
         public virtual ICollection<EducationDetail> EducationDetails { get; set; }
 
 
         public FacebookUser()
         {
-			LogActivities = new HashSet<LogActivity>();
-			PostComments = new HashSet<PostComment>();
-			PostLikes = new HashSet<PostLike>();
-			PostShares = new HashSet<PostShare>();
-			ProfilePhotos = new HashSet<ProfilePhoto>();
-			FacebookUserDetails = new HashSet<FacebookUserDetail>();
-			FacebookUserWorks = new HashSet<FacebookUserWork>();
-			PostMessageLikes = new HashSet<PostMessageLike>();
-			PostMessageComments = new HashSet<PostMessageComment>();
-			PostMessageShares = new HashSet<PostMessageShare>();
-			Posts = new HashSet<Post>();
-			PostMessages = new HashSet<PostMessage>();
-			ChatMedia = new HashSet<ChatMedia>();
-			ChatMedia1 = new HashSet<ChatMedia>();
-			ChatMessages = new HashSet<ChatMessage>();
-			ChatMessages1 = new HashSet<ChatMessage>();
-			CoverPhotos = new HashSet<CoverPhoto>();
-			EducationDetails = new HashSet<EducationDetail>();
+            LogActivities = new HashSet<LogActivity>();
+            PostComments = new HashSet<PostComment>();
+            PostLikes = new HashSet<PostLike>();
+            PostShares = new HashSet<PostShare>();
+            ProfilePhotos = new HashSet<ProfilePhoto>();
+            FacebookUserDetails = new HashSet<FacebookUserDetail>();
+            FacebookUserWorks = new HashSet<FacebookUserWork>();
+            PostMessageLikes = new HashSet<PostMessageLike>();
+            PostMessageComments = new HashSet<PostMessageComment>();
+            PostMessageShares = new HashSet<PostMessageShare>();
+            Posts = new HashSet<Post>();
+            PostMessages = new HashSet<PostMessage>();
+            ChatMedia = new HashSet<ChatMedia>();
+            ChatMedia1 = new HashSet<ChatMedia>();
+            ChatMessages = new HashSet<ChatMessage>();
+            ChatMessages1 = new HashSet<ChatMessage>();
+            CoverPhotos = new HashSet<CoverPhoto>();
+            EducationDetails = new HashSet<EducationDetail>();
         }
-	}
+    }
 }

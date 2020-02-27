@@ -15,7 +15,8 @@ namespace FBRxweb.Domain.FacebookUserModule
 
         public async Task<object> GetAsync(FacebookUser parameters)
         {
-           return  await Uow.Repository<FacebookUser>().AllAsync();
+          
+           return await Uow.Repository<FacebookUser>().AllAsync();
             //throw new NotImplementedException();
         }
 

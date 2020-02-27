@@ -41,4 +41,5 @@ educationDetails : EducationDetailBase[];
 
 
 
+
 }

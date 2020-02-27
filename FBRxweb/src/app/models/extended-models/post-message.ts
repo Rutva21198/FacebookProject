@@ -14,20 +14,18 @@ export class PostMessage extends PostMessageBase
 //#region facebookUser Prop
 facebookUser : FacebookUserBase;
 //#endregion facebookUser Prop
-
 //#region postMessageLikes Prop
-        postMessageLikes : PostMessageLikeBase[];
+postMessageLikes : PostMessageLikeBase[];
 //#endregion postMessageLikes Prop
-
 //#region postMessageComments Prop
-        postMessageComments : PostMessageCommentBase[];
+postMessageComments : PostMessageCommentBase[];
 //#endregion postMessageComments Prop
-
 //#region postMessageShares Prop
-        postMessageShares : PostMessageShareBase[];
+postMessageShares : PostMessageShareBase[];
 //#endregion postMessageShares Prop
 
 //#endregion Generated Reference Properties
+
 
 
 

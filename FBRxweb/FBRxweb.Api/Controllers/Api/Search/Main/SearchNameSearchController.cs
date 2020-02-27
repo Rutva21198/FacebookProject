@@ -24,7 +24,7 @@ namespace FBRxweb.Api.Controllers.FacebookUserModule
             spParameters[0] = new SqlParameter() { ParameterName = "firstName", Value = searchParams["firstName"] };
             spParameters[1] = new SqlParameter() { ParameterName = "lastName", Value = searchParams["lastName"] };
             var result = await DbContextManager.StoreProc<StoreProcResult>("[dbo].spSearchByName", spParameters);
-            return Ok(result.SingleOrDefault()?.Result);
+            return Ok(result.ToList());
         }
     }
 }
