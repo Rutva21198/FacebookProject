@@ -96,6 +96,48 @@ namespace FBRxweb.Models.Main
 
         public virtual FBApplicationObject FBApplicationObject { get; set; }
 
+		#region UserChats Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion UserChats Annotations
+
+        public virtual ICollection<UserChat> UserChats { get; set; }
+
+		#region UserChats1 Annotations
+
+        [InverseProperty("FacebookUser1")]
+		#endregion UserChats1 Annotations
+
+        public virtual ICollection<UserChat> UserChats1 { get; set; }
+
+		#region UserPosts Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion UserPosts Annotations
+
+        public virtual ICollection<UserPost> UserPosts { get; set; }
+
+		#region PostMessages Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion PostMessages Annotations
+
+        public virtual ICollection<PostMessage> PostMessages { get; set; }
+
+		#region PostComments Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion PostComments Annotations
+
+        public virtual ICollection<PostComment> PostComments { get; set; }
+
+		#region PostLikes Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion PostLikes Annotations
+
+        public virtual ICollection<PostLike> PostLikes { get; set; }
+
 		#region PostShares Annotations
 
         [InverseProperty("FacebookUser")]
@@ -103,14 +145,28 @@ namespace FBRxweb.Models.Main
 
         public virtual ICollection<PostShare> PostShares { get; set; }
 
-		#region LogActivities Annotations
+		#region PostMedias Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion LogActivities Annotations
+		#endregion PostMedias Annotations
 
-        public virtual ICollection<LogActivity> LogActivities { get; set; }
+        public virtual ICollection<PostMedia> PostMedias { get; set; }
 
-		#region ProfilePhotos Annotations
+		#region ChatMedia Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion ChatMedia Annotations
+
+        public virtual ICollection<ChatMedia> ChatMedia { get; set; }
+
+		#region ChatMedia1 Annotations
+
+        [InverseProperty("FacebookUser1")]
+		#endregion ChatMedia1 Annotations
+
+        public virtual ICollection<ChatMedia> ChatMedia1 { get; set; }
+
+		#region ChatMessages Annotations
 
         [InverseProperty("FacebookUser")]
 		#endregion ChatMessages Annotations
@@ -131,84 +187,62 @@ namespace FBRxweb.Models.Main
 
         public virtual ICollection<CoverPhoto> CoverPhotos { get; set; }
 
-		#region UserPosts Annotations
+		#region EducationDetails Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion UserPosts Annotations
+		#endregion EducationDetails Annotations
 
-        public virtual ICollection<UserPost> UserPosts { get; set; }
-
-		#region PostMedias Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion PostMedias Annotations
-
-        public virtual ICollection<PostMedia> PostMedias { get; set; }
+        public virtual ICollection<EducationDetail> EducationDetails { get; set; }
 
 		#region LogActivities Annotations
 
         [InverseProperty("FacebookUser")]
 		#endregion LogActivities Annotations
 
- //       public virtual ICollection<LogActivity> LogActivities { get; set; }
+        public virtual ICollection<LogActivity> LogActivities { get; set; }
 
-		#region PostComments Annotations
+		#region ProfilePhotos Annotations
 
-  //      [InverseProperty("FacebookUser")]
-		#endregion PostComments Annotations
+        [InverseProperty("FacebookUser")]
+		#endregion ProfilePhotos Annotations
 
-        public virtual ICollection<PostComment> PostComments { get; set; }
+        public virtual ICollection<ProfilePhoto> ProfilePhotos { get; set; }
 
-		
+		#region FacebookUserDetails Annotations
 
-//		#region PostShares Annotations
-
-//        [InverseProperty("FacebookUser")]
-//#endregion PostShares Annotations
-//
-//        public virtual ICollection<PostShare> PostShares { get; set; }
-
+        [InverseProperty("FacebookUser")]
+		#endregion FacebookUserDetails Annotations
 
         public virtual ICollection<FacebookUserDetail> FacebookUserDetails { get; set; }
 
-		#region PostLikes Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion PostLikes Annotations
-
-        public virtual ICollection<PostLike> PostLikes { get; set; }
-
-		#region EducationDetails Annotations
+		#region FacebookUserWorks Annotations
 
         [InverseProperty("FacebookUser")]
 		#endregion FacebookUserWorks Annotations
 
         public virtual ICollection<FacebookUserWork> FacebookUserWorks { get; set; }
 
-		#region PostComments Annotations
-
- //       [InverseProperty("FacebookUser")]
-		#endregion PostComments Annotations
-
-  //      public virtual ICollection<PostComment> PostComments { get; set; }
-
 
         public FacebookUser()
         {
+			UserChats = new HashSet<UserChat>();
+			UserChats1 = new HashSet<UserChat>();
+			UserPosts = new HashSet<UserPost>();
+			PostMessages = new HashSet<PostMessage>();
+			PostComments = new HashSet<PostComment>();
+			PostLikes = new HashSet<PostLike>();
 			PostShares = new HashSet<PostShare>();
+			PostMedias = new HashSet<PostMedia>();
+			ChatMedia = new HashSet<ChatMedia>();
+			ChatMedia1 = new HashSet<ChatMedia>();
+			ChatMessages = new HashSet<ChatMessage>();
+			ChatMessages1 = new HashSet<ChatMessage>();
+			CoverPhotos = new HashSet<CoverPhoto>();
+			EducationDetails = new HashSet<EducationDetail>();
 			LogActivities = new HashSet<LogActivity>();
-	//		ProfilePhotos = new HashSet<ProfilePhoto>();
+			ProfilePhotos = new HashSet<ProfilePhoto>();
 			FacebookUserDetails = new HashSet<FacebookUserDetail>();
 			FacebookUserWorks = new HashSet<FacebookUserWork>();
-			UserPosts = new HashSet<UserPost>();
-			PostMedias = new HashSet<PostMedia>();
-//			PostMessages = new HashSet<PostMessage>();			
-//			ChatMessages = new HashSet<ChatMessage>();
-			
-			CoverPhotos = new HashSet<CoverPhoto>();
-			PostLikes = new HashSet<PostLike>();
-//			EducationDetails = new HashSet<EducationDetail>();
-			PostComments = new HashSet<PostComment>();
         }
 	}
 }

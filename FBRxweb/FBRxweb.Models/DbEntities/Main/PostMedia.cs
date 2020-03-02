@@ -19,13 +19,6 @@ namespace FBRxweb.Models.Main
 
         public int PostId { get; set; }
 
-		#region Media Annotations
-
-        [Required]
-		#endregion Media Annotations
-
-        public string Media { get; set; }
-
 		#region UserId Annotations
 
         [Range(1,int.MaxValue)]
@@ -34,6 +27,13 @@ namespace FBRxweb.Models.Main
 		#endregion UserId Annotations
 
         public int UserId { get; set; }
+
+		#region Media Annotations
+
+        [Required]
+		#endregion Media Annotations
+
+        public string Media { get; set; }
 
 		#region CreatedDateTime Annotations
 

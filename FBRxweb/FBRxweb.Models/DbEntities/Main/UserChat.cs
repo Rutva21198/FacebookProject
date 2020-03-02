@@ -30,6 +30,7 @@ namespace FBRxweb.Models.Main
 
         [Range(1,int.MaxValue)]
         [Required]
+        [RelationshipTableAttribue("FacebookUsers","dbo","","SenderId")]
 		#endregion SenderId Annotations
 
         public int SenderId { get; set; }
@@ -38,6 +39,7 @@ namespace FBRxweb.Models.Main
 
         [Range(1,int.MaxValue)]
         [Required]
+        [RelationshipTableAttribue("FacebookUsers","dbo","","ReceiverId")]
 		#endregion ReceiverId Annotations
 
         public int ReceiverId { get; set; }
@@ -48,6 +50,22 @@ namespace FBRxweb.Models.Main
 		#endregion SendDateTime Annotations
 
         public System.DateTimeOffset SendDateTime { get; set; }
+
+		#region FacebookUser Annotations
+
+        [ForeignKey(nameof(ReceiverId))]
+        [InverseProperty(nameof(FBRxweb.Models.Main.FacebookUser.UserChats))]
+		#endregion FacebookUser Annotations
+
+        public virtual FacebookUser FacebookUser { get; set; }
+
+		#region FacebookUser1 Annotations
+
+        [ForeignKey(nameof(SenderId))]
+        [InverseProperty(nameof(FBRxweb.Models.Main.FacebookUser.UserChats1))]
+		#endregion FacebookUser1 Annotations
+
+        public virtual FacebookUser FacebookUser1 { get; set; }
 
 
         public UserChat()

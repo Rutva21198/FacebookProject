@@ -22,4 +22,5 @@ facebookUserDetails : FacebookUserDetailBase[];
 
 
 
+
 }

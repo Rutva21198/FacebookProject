@@ -70,7 +70,6 @@ namespace FBRxweb.Models.Main
         {
 			FacebookUserDetails = new HashSet<FacebookUserDetail>();
 			FacebookUsers = new HashSet<FacebookUser>();
-			FacebookUserDetails = new HashSet<FacebookUserDetail>();
 			EducationDetails = new HashSet<EducationDetail>();
         }
 	}

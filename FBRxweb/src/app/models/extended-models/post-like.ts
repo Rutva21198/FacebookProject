@@ -12,12 +12,12 @@ export class PostLike extends PostLikeBase
 //#region facebookUser Prop
 facebookUser : FacebookUserBase;
 //#endregion facebookUser Prop
-
 //#region userPost Prop
-        userPost : UserPostBase;
+userPost : UserPostBase;
 //#endregion userPost Prop
 
 //#endregion Generated Reference Properties
+
 
 
 

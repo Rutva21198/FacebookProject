@@ -10,17 +10,17 @@ export class PostMediaBase {
 //#endregion postId Prop
 
 
-//#region media Prop
-        @required()
-        media : string;
-//#endregion media Prop
-
-
 //#region userId Prop
         @range({minimumNumber:1,maximumNumber:2147483647})
         @required()
         userId : number;
 //#endregion userId Prop
+
+
+//#region media Prop
+        @required()
+        media : string;
+//#endregion media Prop
 
 
 //#region createdDateTime Prop

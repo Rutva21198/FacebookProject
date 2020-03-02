@@ -37,3 +37,16 @@ C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.UnitOfWork\bin\Debug\netc
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.UnitOfWork\bin\Debug\netcoreapp3.1\FBRxweb.BoundedContext.pdb
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.UnitOfWork\bin\Debug\netcoreapp3.1\FBRxweb.Models.pdb
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.UnitOfWork\obj\Debug\netcoreapp3.1\FBRxweb.UnitOfWork.csproj.CopyComplete
+D:\123\FBRxweb\FBRxweb.UnitOfWork\bin\Debug\netcoreapp3.1\FBRxweb.UnitOfWork.deps.json
+D:\123\FBRxweb\FBRxweb.UnitOfWork\bin\Debug\netcoreapp3.1\FBRxweb.UnitOfWork.dll
+D:\123\FBRxweb\FBRxweb.UnitOfWork\bin\Debug\netcoreapp3.1\FBRxweb.UnitOfWork.pdb
+D:\123\FBRxweb\FBRxweb.UnitOfWork\bin\Debug\netcoreapp3.1\FBRxweb.BoundedContext.dll
+D:\123\FBRxweb\FBRxweb.UnitOfWork\bin\Debug\netcoreapp3.1\FBRxweb.Models.dll
+D:\123\FBRxweb\FBRxweb.UnitOfWork\bin\Debug\netcoreapp3.1\FBRxweb.BoundedContext.pdb
+D:\123\FBRxweb\FBRxweb.UnitOfWork\bin\Debug\netcoreapp3.1\FBRxweb.Models.pdb
+D:\123\FBRxweb\FBRxweb.UnitOfWork\obj\Debug\netcoreapp3.1\FBRxweb.UnitOfWork.csprojAssemblyReference.cache
+D:\123\FBRxweb\FBRxweb.UnitOfWork\obj\Debug\netcoreapp3.1\FBRxweb.UnitOfWork.AssemblyInfoInputs.cache
+D:\123\FBRxweb\FBRxweb.UnitOfWork\obj\Debug\netcoreapp3.1\FBRxweb.UnitOfWork.AssemblyInfo.cs
+D:\123\FBRxweb\FBRxweb.UnitOfWork\obj\Debug\netcoreapp3.1\FBRxweb.UnitOfWork.csproj.CopyComplete
+D:\123\FBRxweb\FBRxweb.UnitOfWork\obj\Debug\netcoreapp3.1\FBRxweb.UnitOfWork.dll
+D:\123\FBRxweb\FBRxweb.UnitOfWork\obj\Debug\netcoreapp3.1\FBRxweb.UnitOfWork.pdb

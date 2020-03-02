@@ -35,4 +35,8 @@ export class UserChatBase {
         sendDateTime : any;
 //#endregion sendDateTime Prop
 
+
+
+
+
 }

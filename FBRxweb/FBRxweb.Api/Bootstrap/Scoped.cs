@@ -16,7 +16,11 @@ using FBRxweb.Domain.FacebookUserModule;
 
             using FBRxweb.Domain.PostModule;
             using FBRxweb.Domain.FacebookChatModule;
+          //  using FBRxweb.Domain.vUserProfileModule;
+            using FBRxweb.Domain.UserProfileDetailModule;
             #endregion Namespace
+
+
 
 using FBRxweb.Domain.FacebookUserDetailModule;
             using FBRxweb.Domain.FacebookUserWorkModule;
@@ -77,9 +81,14 @@ namespace FBRxweb.Api.Bootstrap
                         serviceCollection.AddScoped<IEducationDetailContext, EducationDetailContext>();
             serviceCollection.AddScoped<IEducationDetailUow, EducationDetailUow>();
 
+                       
+                        serviceCollection.AddScoped<IUserProfileDetailContext, UserProfileDetailContext>();
+            serviceCollection.AddScoped<IUserProfileDetailUow, UserProfileDetailUow>();
             #endregion ContextService
 
 
+
+            //
 
               #region DomainService
    
@@ -109,7 +118,13 @@ namespace FBRxweb.Api.Bootstrap
             serviceCollection.AddScoped<IvCheckCommentUserDomain, vCheckCommentUserDomain>();
             
             serviceCollection.AddScoped<IvCheckShareUserDomain, vCheckShareUserDomain>();
+            
+           // serviceCollection.AddScoped<IVUserProfileDomain, VUserProfileDomain>();
+            
+            serviceCollection.AddScoped<IvUserProfileDomain, vUserProfileDomain>();
             #endregion DomainService
+
+
 
 
 
@@ -130,9 +145,9 @@ namespace FBRxweb.Api.Bootstrap
             serviceCollection.AddScoped<IFacebookUserWorkDomain, FacebookUserWorkDomain>();
             
             serviceCollection.AddScoped<IEducationDetailDomain, EducationDetailDomain>();
-            #endregion DomainService
 
 
+            #endregion
 
         }
     }

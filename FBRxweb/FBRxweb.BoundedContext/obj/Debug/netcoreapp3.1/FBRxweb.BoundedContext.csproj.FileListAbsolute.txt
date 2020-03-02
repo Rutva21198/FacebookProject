@@ -31,3 +31,14 @@ C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.BoundedContext\bin\Debug\
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.Models.dll
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.Models.pdb
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.csproj.CopyComplete
+D:\123\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.BoundedContext.deps.json
+D:\123\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.BoundedContext.dll
+D:\123\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.BoundedContext.pdb
+D:\123\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.Models.dll
+D:\123\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.Models.pdb
+D:\123\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.csprojAssemblyReference.cache
+D:\123\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.AssemblyInfoInputs.cache
+D:\123\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.AssemblyInfo.cs
+D:\123\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.csproj.CopyComplete
+D:\123\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.dll
+D:\123\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.pdb
