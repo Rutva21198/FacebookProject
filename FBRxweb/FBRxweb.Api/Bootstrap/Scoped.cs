@@ -16,6 +16,13 @@ using FBRxweb.Domain.FacebookUserModule;
             using FBRxweb.Domain.PostModule;
             using FBRxweb.Domain.FacebookChatModule;
             #endregion Namespace
+using FBRxweb.Domain.FacebookUserDetailModule;
+            using FBRxweb.Domain.FacebookUserWorkModule;
+            using FBRxweb.Domain.EducationDetailModule;
+        
+
+
+
 
 
 
@@ -51,6 +58,21 @@ namespace FBRxweb.Api.Bootstrap
          
                         serviceCollection.AddScoped<IFacebookChatContext, FacebookChatContext>();
             serviceCollection.AddScoped<IFacebookChatUow, FacebookChatUow>();
+             
+            serviceCollection.AddScoped<IFacebookContext, FacebookContext>();
+            serviceCollection.AddScoped<IFacebookUow, FacebookUow>();
+                        serviceCollection.AddScoped<IProfileViewContext, ProfileViewContext>();
+            serviceCollection.AddScoped<IProfileViewUow, ProfileViewUow>();
+                        serviceCollection.AddScoped<IProfileViewContext, ProfileViewContext>();
+            serviceCollection.AddScoped<IProfileViewUow, ProfileViewUow>();
+                        serviceCollection.AddScoped<IProfileViewContext, ProfileViewContext>();
+            serviceCollection.AddScoped<IProfileViewUow, ProfileViewUow>();
+                        serviceCollection.AddScoped<IFacebookUserDetailContext, FacebookUserDetailContext>();
+            serviceCollection.AddScoped<IFacebookUserDetailUow, FacebookUserDetailUow>();
+                        serviceCollection.AddScoped<IFacebookUserWorkContext, FacebookUserWorkContext>();
+            serviceCollection.AddScoped<IFacebookUserWorkUow, FacebookUserWorkUow>();
+                        serviceCollection.AddScoped<IEducationDetailContext, EducationDetailContext>();
+            serviceCollection.AddScoped<IEducationDetailUow, EducationDetailUow>();
             #endregion ContextService
 
 
@@ -84,24 +106,6 @@ namespace FBRxweb.Api.Bootstrap
             
             serviceCollection.AddScoped<IvCheckShareUserDomain, vCheckShareUserDomain>();
             #endregion DomainService
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }

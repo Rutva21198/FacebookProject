@@ -113,23 +113,23 @@ namespace FBRxweb.Models.Main
 		#region ProfilePhotos Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion ProfilePhotos Annotations
+		#endregion ChatMessages Annotations
 
-        public virtual ICollection<ProfilePhoto> ProfilePhotos { get; set; }
+        public virtual ICollection<ChatMessage> ChatMessages { get; set; }
 
-		#region FacebookUserDetails Annotations
+		#region ChatMessages1 Annotations
+
+        [InverseProperty("FacebookUser1")]
+		#endregion ChatMessages1 Annotations
+
+        public virtual ICollection<ChatMessage> ChatMessages1 { get; set; }
+
+		#region CoverPhotos Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion FacebookUserDetails Annotations
+		#endregion CoverPhotos Annotations
 
-        public virtual ICollection<FacebookUserDetail> FacebookUserDetails { get; set; }
-
-		#region FacebookUserWorks Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion FacebookUserWorks Annotations
-
-        public virtual ICollection<FacebookUserWork> FacebookUserWorks { get; set; }
+        public virtual ICollection<CoverPhoto> CoverPhotos { get; set; }
 
 		#region UserPosts Annotations
 
@@ -145,36 +145,31 @@ namespace FBRxweb.Models.Main
 
         public virtual ICollection<PostMedia> PostMedias { get; set; }
 
-		#region PostMessages Annotations
+		#region LogActivities Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion PostMessages Annotations
+		#endregion LogActivities Annotations
 
-        public virtual ICollection<PostMessage> PostMessages { get; set; }
+        public virtual ICollection<LogActivity> LogActivities { get; set; }
 
-		#region ChatMedia Annotations
+		#region PostComments Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion ChatMedia Annotations
+		#endregion PostComments Annotations
 
-        public virtual ICollection<ChatMedia> ChatMedia { get; set; }
+        public virtual ICollection<PostComment> PostComments { get; set; }
 
 		
 
-		#region ChatMessages Annotations
+		#region PostShares Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion ChatMessages Annotations
+		#endregion PostShares Annotations
 
-        public virtual ICollection<ChatMessage> ChatMessages { get; set; }
+        public virtual ICollection<PostShare> PostShares { get; set; }
 
 
-		#region CoverPhotos Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion CoverPhotos Annotations
-
-        public virtual ICollection<CoverPhoto> CoverPhotos { get; set; }
+        public virtual ICollection<FacebookUserDetail> FacebookUserDetails { get; set; }
 
 		#region PostLikes Annotations
 
@@ -186,9 +181,9 @@ namespace FBRxweb.Models.Main
 		#region EducationDetails Annotations
 
         [InverseProperty("FacebookUser")]
-		#endregion EducationDetails Annotations
+		#endregion FacebookUserWorks Annotations
 
-        public virtual ICollection<EducationDetail> EducationDetails { get; set; }
+        public virtual ICollection<FacebookUserWork> FacebookUserWorks { get; set; }
 
 		#region PostComments Annotations
 
