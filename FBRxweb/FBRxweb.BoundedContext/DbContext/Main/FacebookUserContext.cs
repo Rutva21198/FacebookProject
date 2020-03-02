@@ -8,6 +8,7 @@ using FBRxweb.BoundedContext.Singleton;
 using RxWeb.Core.Data;
 using RxWeb.Core.Data.Models;
 using RxWeb.Core.Data.BoundedContext;
+using FBRxweb.Models.ViewModels;
 
 namespace FBRxweb.BoundedContext.Main
 {

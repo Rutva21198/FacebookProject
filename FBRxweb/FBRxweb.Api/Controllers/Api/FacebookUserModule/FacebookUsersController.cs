@@ -1,16 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using FBRxweb.Domain.FacebookUserModule;
-using FBRxweb.Models.Main;
 using RxWeb.Core.AspNetCore;
-using RxWeb.Core.Security.Authorization;
+using FBRxweb.Models.ViewModels;
+using FBRxweb.Domain.FacebookuserModule;
 
 namespace FBRxweb.Api.Controllers.FacebookUserModule
 {
     [ApiController]
     [Route("api/[controller]")]
 	
-	public class FacebookUsersController : BaseDomainController<FacebookUser,FacebookUser>
+	public class FacebookUsersController : BaseDomainController<FacebookUserModel, FacebookUserModel>
 
     {
         public FacebookUsersController(IFacebookUserDomain domain):base(domain) {}

@@ -1,6 +1,5 @@
 export {FacebookUserDetailBase} from './facebook-user-detail-base';;
 export {FacebookUserWorkBase} from './facebook-user-work-base';;
-export {FacebookUserBase} from './facebook-user-base';;
 export {ApplicationLocaleBase} from './application-locale-base';;
 export {ApplicationTimeZoneBase} from './application-time-zone-base';;
 export {UserBase} from './user-base';;
@@ -27,6 +26,7 @@ export {ChatMessageBase} from './chat-message-base';;
 export {CoverPhotoBase} from './cover-photo-base';;
 export {EducationDetailBase} from './education-detail-base';;
 export {FBApplicationObjectBase} from './f-b-application-object-base';;
+export {FacebookUserBase} from './facebook-user-base';;
 export {FBApplicationObjectTypeBase} from './f-b-application-object-type-base';;
 export {LogActivityBase} from './log-activity-base';;
 export {ProfilePhotoBase} from './profile-photo-base';;

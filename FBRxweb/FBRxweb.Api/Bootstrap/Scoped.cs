@@ -4,32 +4,23 @@ using FBRxweb.Infrastructure.Security;
 using RxWeb.Core.Data;
 using RxWeb.Core.Security;
 using RxWeb.Core.Annotations;
-using RxWeb.Core;
 using FBRxweb.UnitOfWork.DbEntityAudit;
 using FBRxweb.BoundedContext.Main;
 using FBRxweb.UnitOfWork.Main;
 
-using FBRxweb.Domain.FacebookUserModule;
 
- using FBRxweb.Domain.ViewOnlineUserModule;
-
-
-            using FBRxweb.Domain.PostModule;
-            using FBRxweb.Domain.FacebookChatModule;
-          //  using FBRxweb.Domain.vUserProfileModule;
-            using FBRxweb.Domain.UserProfileDetailModule;
-            #endregion Namespace
+using FBRxweb.Domain.PostModule;
+using FBRxweb.Domain.FacebookChatModule;
+//  using FBRxweb.Domain.vUserProfileModule;
+using FBRxweb.Domain.UserProfileDetailModule;
+#endregion Namespace
 
 
 
 using FBRxweb.Domain.FacebookUserDetailModule;
-            using FBRxweb.Domain.FacebookUserWorkModule;
-            using FBRxweb.Domain.EducationDetailModule;
-       
-
-
-
-
+using FBRxweb.Domain.FacebookUserWorkModule;
+using FBRxweb.Domain.EducationDetailModule;
+using FBRxweb.Domain.FacebookuserModule;
 
 namespace FBRxweb.Api.Bootstrap
 {
@@ -88,7 +79,7 @@ namespace FBRxweb.Api.Bootstrap
 
 
 
-            //
+            
 
               #region DomainService
    

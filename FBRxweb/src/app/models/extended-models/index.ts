@@ -1,6 +1,5 @@
 export {FacebookUserDetail} from './facebook-user-detail';;
 export {FacebookUserWork} from './facebook-user-work';;
-export {FacebookUser} from './facebook-user';;
 export {ApplicationLocale} from './application-locale';;
 export {ApplicationTimeZone} from './application-time-zone';;
 export {User} from './user';;
@@ -27,6 +26,7 @@ export {ChatMessage} from './chat-message';;
 export {CoverPhoto} from './cover-photo';;
 export {EducationDetail} from './education-detail';;
 export {FBApplicationObject} from './f-b-application-object';;
+export {FacebookUser} from './facebook-user';;
 export {FBApplicationObjectType} from './f-b-application-object-type';;
 export {LogActivity} from './log-activity';;
 export {ProfilePhoto} from './profile-photo';;

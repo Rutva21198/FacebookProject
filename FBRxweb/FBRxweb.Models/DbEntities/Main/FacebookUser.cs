@@ -53,10 +53,10 @@ namespace FBRxweb.Models.Main
 		#region Password Annotations
 
         [Required]
-        [MaxLength(200)]
+        [MaxLength(132)]
 		#endregion Password Annotations
 
-        public string Password { get; set; }
+        public byte[] Password { get; set; }
 
 		#region DateOfBirth Annotations
 
@@ -88,6 +88,14 @@ namespace FBRxweb.Models.Main
 
         public bool LoginStatus { get; set; }
 
+		#region Salt Annotations
+
+        [Required]
+        [MaxLength(140)]
+		#endregion Salt Annotations
+
+        public byte[] Salt { get; set; }
+
 		#region FBApplicationObject Annotations
 
         [ForeignKey(nameof(GenderAO))]
@@ -95,6 +103,34 @@ namespace FBRxweb.Models.Main
 		#endregion FBApplicationObject Annotations
 
         public virtual FBApplicationObject FBApplicationObject { get; set; }
+
+		#region LogActivities Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion LogActivities Annotations
+
+        public virtual ICollection<LogActivity> LogActivities { get; set; }
+
+		#region ProfilePhotos Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion ProfilePhotos Annotations
+
+        public virtual ICollection<ProfilePhoto> ProfilePhotos { get; set; }
+
+		#region FacebookUserDetails Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion FacebookUserDetails Annotations
+
+        public virtual ICollection<FacebookUserDetail> FacebookUserDetails { get; set; }
+
+		#region FacebookUserWorks Annotations
+
+        [InverseProperty("FacebookUser")]
+		#endregion FacebookUserWorks Annotations
+
+        public virtual ICollection<FacebookUserWork> FacebookUserWorks { get; set; }
 
 		#region UserChats Annotations
 
@@ -194,37 +230,13 @@ namespace FBRxweb.Models.Main
 
         public virtual ICollection<EducationDetail> EducationDetails { get; set; }
 
-		#region LogActivities Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion LogActivities Annotations
-
-        public virtual ICollection<LogActivity> LogActivities { get; set; }
-
-		#region ProfilePhotos Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion ProfilePhotos Annotations
-
-        public virtual ICollection<ProfilePhoto> ProfilePhotos { get; set; }
-
-		#region FacebookUserDetails Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion FacebookUserDetails Annotations
-
-        public virtual ICollection<FacebookUserDetail> FacebookUserDetails { get; set; }
-
-		#region FacebookUserWorks Annotations
-
-        [InverseProperty("FacebookUser")]
-		#endregion FacebookUserWorks Annotations
-
-        public virtual ICollection<FacebookUserWork> FacebookUserWorks { get; set; }
-
 
         public FacebookUser()
         {
+			LogActivities = new HashSet<LogActivity>();
+			ProfilePhotos = new HashSet<ProfilePhoto>();
+			FacebookUserDetails = new HashSet<FacebookUserDetail>();
+			FacebookUserWorks = new HashSet<FacebookUserWork>();
 			UserChats = new HashSet<UserChat>();
 			UserChats1 = new HashSet<UserChat>();
 			UserPosts = new HashSet<UserPost>();
@@ -239,10 +251,6 @@ namespace FBRxweb.Models.Main
 			ChatMessages1 = new HashSet<ChatMessage>();
 			CoverPhotos = new HashSet<CoverPhoto>();
 			EducationDetails = new HashSet<EducationDetail>();
-			LogActivities = new HashSet<LogActivity>();
-			ProfilePhotos = new HashSet<ProfilePhoto>();
-			FacebookUserDetails = new HashSet<FacebookUserDetail>();
-			FacebookUserWorks = new HashSet<FacebookUserWork>();
         }
 	}
 }

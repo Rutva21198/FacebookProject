@@ -10,4 +10,5 @@ export class vBasicDetail extends vBasicDetailBase
 
 //#endregion Generated Reference Properties
 
+
 }
