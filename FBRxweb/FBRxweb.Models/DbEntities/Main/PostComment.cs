@@ -47,7 +47,7 @@ namespace FBRxweb.Models.Main
 		#region FacebookUser Annotations
 
         [ForeignKey(nameof(UserId))]
-        [InverseProperty(nameof(FBRxweb.Models.Main.FacebookUser.PostComments))]
+ //       [InverseProperty(nameof(FBRxweb.Models.Main.FacebookUser.PostComments))]
 		#endregion FacebookUser Annotations
 
         public virtual FacebookUser FacebookUser { get; set; }

@@ -54,7 +54,7 @@ namespace FBRxweb.Models.Main
 		#region FacebookUser Annotations
 
         [ForeignKey(nameof(ReceiverId))]
-        [InverseProperty(nameof(FBRxweb.Models.Main.FacebookUser.ChatMedia))]
+ //       [InverseProperty(nameof(FBRxweb.Models.Main.FacebookUser.ChatMedia))]
 		#endregion FacebookUser Annotations
 
         public virtual FacebookUser FacebookUser { get; set; }

@@ -150,23 +150,23 @@ namespace FBRxweb.Models.Main
         [InverseProperty("FacebookUser")]
 		#endregion LogActivities Annotations
 
-        public virtual ICollection<LogActivity> LogActivities { get; set; }
+ //       public virtual ICollection<LogActivity> LogActivities { get; set; }
 
 		#region PostComments Annotations
 
-        [InverseProperty("FacebookUser")]
+  //      [InverseProperty("FacebookUser")]
 		#endregion PostComments Annotations
 
         public virtual ICollection<PostComment> PostComments { get; set; }
 
 		
 
-		#region PostShares Annotations
+//		#region PostShares Annotations
 
-        [InverseProperty("FacebookUser")]
-		#endregion PostShares Annotations
-
-        public virtual ICollection<PostShare> PostShares { get; set; }
+//        [InverseProperty("FacebookUser")]
+//#endregion PostShares Annotations
+//
+//        public virtual ICollection<PostShare> PostShares { get; set; }
 
 
         public virtual ICollection<FacebookUserDetail> FacebookUserDetails { get; set; }
@@ -187,29 +187,27 @@ namespace FBRxweb.Models.Main
 
 		#region PostComments Annotations
 
-        [InverseProperty("FacebookUser")]
+ //       [InverseProperty("FacebookUser")]
 		#endregion PostComments Annotations
 
-        public virtual ICollection<PostComment> PostComments { get; set; }
+  //      public virtual ICollection<PostComment> PostComments { get; set; }
 
 
         public FacebookUser()
         {
 			PostShares = new HashSet<PostShare>();
 			LogActivities = new HashSet<LogActivity>();
-			ProfilePhotos = new HashSet<ProfilePhoto>();
+	//		ProfilePhotos = new HashSet<ProfilePhoto>();
 			FacebookUserDetails = new HashSet<FacebookUserDetail>();
 			FacebookUserWorks = new HashSet<FacebookUserWork>();
 			UserPosts = new HashSet<UserPost>();
 			PostMedias = new HashSet<PostMedia>();
-			PostMessages = new HashSet<PostMessage>();
-			ChatMedia = new HashSet<ChatMedia>();
-			
-			ChatMessages = new HashSet<ChatMessage>();
+//			PostMessages = new HashSet<PostMessage>();			
+//			ChatMessages = new HashSet<ChatMessage>();
 			
 			CoverPhotos = new HashSet<CoverPhoto>();
 			PostLikes = new HashSet<PostLike>();
-			EducationDetails = new HashSet<EducationDetail>();
+//			EducationDetails = new HashSet<EducationDetail>();
 			PostComments = new HashSet<PostComment>();
         }
 	}

@@ -20,6 +20,8 @@ namespace FBRxweb.BoundedContext.Main
         public DbSet<PostComment> PostComment { get; set; }
         public DbSet<PostLike> PostLike { get; set; }
         public DbSet<PostShare> PostShare { get; set; }
+       
+        
 
         #endregion DbSets
 
