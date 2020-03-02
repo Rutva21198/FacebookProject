@@ -26,15 +26,6 @@ namespace FBRxweb.Models.Main
 
         public string Media { get; set; }
 
-		#region MediaTypeAO Annotations
-
-        [Range(1,int.MaxValue)]
-        [Required]
-        [RelationshipTableAttribue("FBApplicationObjects","dbo","","MediaTypeAO")]
-		#endregion MediaTypeAO Annotations
-
-        public int MediaTypeAO { get; set; }
-
 		#region SenderId Annotations
 
         [Range(1,int.MaxValue)]
@@ -68,17 +59,7 @@ namespace FBRxweb.Models.Main
 
         public virtual FacebookUser FacebookUser { get; set; }
 
-		
-
-        public virtual FacebookUser FacebookUser1 { get; set; }
-
-		#region FBApplicationObject Annotations
-
-        [ForeignKey(nameof(MediaTypeAO))]
-        [InverseProperty(nameof(FBRxweb.Models.Main.FBApplicationObject.ChatMedia))]
-		#endregion FBApplicationObject Annotations
-
-        public virtual FBApplicationObject FBApplicationObject { get; set; }
+	
 
 
         public ChatMedia()

@@ -11,13 +11,13 @@ namespace FBRxweb.Models.Main
     [Table("PostMessages",Schema="dbo")]
     public partial class PostMessage
     {
-		#region PostMessageId Annotations
+		#region PostId Annotations
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [System.ComponentModel.DataAnnotations.Key]
-		#endregion PostMessageId Annotations
+		#endregion PostId Annotations
 
-        public int PostMessageId { get; set; }
+        public int PostId { get; set; }
 
 		#region Message Annotations
 
@@ -35,12 +35,12 @@ namespace FBRxweb.Models.Main
 
         public int UserId { get; set; }
 
-		#region PostDateTime Annotations
+		#region CreatedDateTime Annotations
 
         [Required]
-		#endregion PostDateTime Annotations
+		#endregion CreatedDateTime Annotations
 
-        public System.DateTimeOffset PostDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
 		#region FacebookUser Annotations
 
@@ -50,33 +50,9 @@ namespace FBRxweb.Models.Main
 
         public virtual FacebookUser FacebookUser { get; set; }
 
-		#region PostMessageLikes Annotations
-
-        [InverseProperty("PostMessage")]
-		#endregion PostMessageLikes Annotations
-
-        public virtual ICollection<PostMessageLike> PostMessageLikes { get; set; }
-
-		#region PostMessageComments Annotations
-
-        [InverseProperty("PostMessage")]
-		#endregion PostMessageComments Annotations
-
-        public virtual ICollection<PostMessageComment> PostMessageComments { get; set; }
-
-		#region PostMessageShares Annotations
-
-        [InverseProperty("PostMessage")]
-		#endregion PostMessageShares Annotations
-
-        public virtual ICollection<PostMessageShare> PostMessageShares { get; set; }
-
 
         public PostMessage()
         {
-			PostMessageLikes = new HashSet<PostMessageLike>();
-			PostMessageComments = new HashSet<PostMessageComment>();
-			PostMessageShares = new HashSet<PostMessageShare>();
         }
 	}
 }

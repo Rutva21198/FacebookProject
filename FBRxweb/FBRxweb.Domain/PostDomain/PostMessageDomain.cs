@@ -1,16 +1,21 @@
+using FBRxweb.BoundedContext.SqlContext;
+using FBRxweb.Models.Main;
+using FBRxweb.Models.ViewModels;
+using FBRxweb.UnitOfWork.Main;
+using Microsoft.Data.SqlClient;
+using RxWeb.Core;
+using RxWeb.Core.Data;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using RxWeb.Core;
-using FBRxweb.UnitOfWork.Main;
-using FBRxweb.Models.Main;
 
 namespace FBRxweb.Domain.PostModule
 {
     public class PostMessageDomain : IPostMessageDomain
     {
-        public PostMessageDomain(IPostUow uow) {
+        public PostMessageDomain(IPostUow uow,IDbContextManager<MainSqlDbContext> dbContextManager) {
             this.Uow = uow;
+           this.DbContextManager = dbContextManager;
         }
 
         public Task<object> GetAsync(PostMessage parameters)
@@ -31,8 +36,23 @@ namespace FBRxweb.Domain.PostModule
 
         public async Task AddAsync(PostMessage entity)
         {
-            await Uow.RegisterNewAsync(entity);
-            await Uow.CommitAsync();
+            await DbContextManager.BeginTransactionAsync();
+
+            var spParameters = new SqlParameter[2];
+
+            spParameters[0] = new SqlParameter() { ParameterName = "userid", Value = entity.UserId };
+            spParameters[1] = new SqlParameter() { ParameterName = "post", Value = entity.Message };
+
+            await DbContextManager.StoreProc<StoreProcResult>("[dbo].spInsertPostMessages", spParameters);
+            try
+            {
+                await DbContextManager.CommitAsync();                
+
+            }
+            catch (Exception)
+            {
+                DbContextManager.RollbackTransaction();
+            }
         }
 
         public HashSet<string> UpdateValidation(PostMessage entity)
@@ -56,9 +76,13 @@ namespace FBRxweb.Domain.PostModule
             throw new NotImplementedException();
         }
 
+        
+
         public IPostUow Uow { get; set; }
 
         private HashSet<string> ValidationMessages { get; set; } = new HashSet<string>();
+
+        private IDbContextManager<MainSqlDbContext> DbContextManager { get; set; }
     }
 
     public interface IPostMessageDomain : ICoreDomain<PostMessage, PostMessage> { }

@@ -16,13 +16,6 @@ export class ChatMediaBase {
 //#endregion media Prop
 
 
-//#region mediaTypeAO Prop
-        @range({minimumNumber:1,maximumNumber:2147483647})
-        @required()
-        mediaTypeAO : number;
-//#endregion mediaTypeAO Prop
-
-
 //#region senderId Prop
         @range({minimumNumber:1,maximumNumber:2147483647})
         @required()
@@ -41,8 +34,6 @@ export class ChatMediaBase {
         @required()
         sendDateTime : any;
 //#endregion sendDateTime Prop
-
-
 
 
 

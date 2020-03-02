@@ -4,10 +4,10 @@ import { gridColumn } from "@rxweb/grid"
 
 export class PostMessageBase {
 
-//#region postMessageId Prop
+//#region postId Prop
         @prop()
-        postMessageId : number;
-//#endregion postMessageId Prop
+        postId : number;
+//#endregion postId Prop
 
 
 //#region message Prop
@@ -23,16 +23,10 @@ export class PostMessageBase {
 //#endregion userId Prop
 
 
-//#region postDateTime Prop
+//#region createdDateTime Prop
         @required()
-        postDateTime : any;
-//#endregion postDateTime Prop
-
-
-
-
-
-
+        createdDateTime : any;
+//#endregion createdDateTime Prop
 
 
 

@@ -4,17 +4,10 @@ import { gridColumn } from "@rxweb/grid"
 
 export class PostShareBase {
 
-//#region shareId Prop
+//#region postShareId Prop
         @prop()
-        shareId : number;
-//#endregion shareId Prop
-
-
-//#region postId Prop
-        @range({minimumNumber:1,maximumNumber:2147483647})
-        @required()
-        postId : number;
-//#endregion postId Prop
+        postShareId : number;
+//#endregion postShareId Prop
 
 
 //#region userId Prop
@@ -22,6 +15,13 @@ export class PostShareBase {
         @required()
         userId : number;
 //#endregion userId Prop
+
+
+//#region postId Prop
+        @range({minimumNumber:1,maximumNumber:2147483647})
+        @required()
+        postId : number;
+//#endregion postId Prop
 
 
 

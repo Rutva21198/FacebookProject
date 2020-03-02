@@ -10,17 +10,17 @@ export class PostBase {
 //#endregion postId Prop
 
 
+//#region postData Prop
+        @required()
+        postData : string;
+//#endregion postData Prop
+
+
 //#region userId Prop
         @range({minimumNumber:1,maximumNumber:2147483647})
         @required()
         userId : number;
 //#endregion userId Prop
-
-
-//#region media Prop
-        @required()
-        media : string;
-//#endregion media Prop
 
 
 //#region createdDateTime Prop
@@ -29,15 +29,25 @@ export class PostBase {
 //#endregion createdDateTime Prop
 
 
-//#region mediaTypeAO Prop
+//#region totalLike Prop
         @range({minimumNumber:1,maximumNumber:2147483647})
         @required()
-        mediaTypeAO : number;
-//#endregion mediaTypeAO Prop
+        totalLike : number;
+//#endregion totalLike Prop
 
 
+//#region totalComment Prop
+        @range({minimumNumber:1,maximumNumber:2147483647})
+        @required()
+        totalComment : number;
+//#endregion totalComment Prop
 
 
+//#region totalShare Prop
+        @range({minimumNumber:1,maximumNumber:2147483647})
+        @required()
+        totalShare : number;
+//#endregion totalShare Prop
 
 
 

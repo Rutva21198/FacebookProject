@@ -9,14 +9,15 @@ using FBRxweb.UnitOfWork.DbEntityAudit;
 using FBRxweb.BoundedContext.Main;
 using FBRxweb.UnitOfWork.Main;
 using FBRxweb.Domain.FacebookUserModule;
-using FBRxweb.Domain.UserChatModule;
+
  using FBRxweb.Domain.ViewOnlineUserModule;
 
-using FBRxweb.Domain.PostModule;
-using FBRxweb.Domain.PostDetailModule;
-using FBRxweb.Domain.PostMessageDetailModule;
 
+            using FBRxweb.Domain.PostModule;
+            using FBRxweb.Domain.FacebookChatModule;
             #endregion Namespace
+
+
 
 namespace FBRxweb.Api.Bootstrap
 {
@@ -46,30 +47,21 @@ namespace FBRxweb.Api.Bootstrap
                         serviceCollection.AddScoped<IPostContext, PostContext>();
             serviceCollection.AddScoped<IPostUow, PostUow>();
                         serviceCollection.AddScoped<IPostDetailContext, PostDetailContext>();
-            serviceCollection.AddScoped<IPostDetailUow, PostDetailUow>();
-                        serviceCollection.AddScoped<IPostMessageDetailContext, PostMessageDetailContext>();
-            serviceCollection.AddScoped<IPostMessageDetailUow, PostMessageDetailUow>();
-             
+ 
+         
+                        serviceCollection.AddScoped<IFacebookChatContext, FacebookChatContext>();
+            serviceCollection.AddScoped<IFacebookChatUow, FacebookChatUow>();
             #endregion ContextService
+
 
 
               #region DomainService
    
             serviceCollection.AddScoped<IFacebookUserDomain, FacebookUserDomain>();
+       
+            serviceCollection.AddScoped<IvAllPostDomain, vAllPostDomain>();
             
-            serviceCollection.AddScoped<IChatMessageDomain, ChatMessageDomain>();
-            
-            serviceCollection.AddScoped<IChatMediaDomain, ChatMediaDomain>();
-            
-            serviceCollection.AddScoped<IChatMediaDomain, ChatMediaDomain>();
-             serviceCollection.AddScoped<IChatMessageDomain, ChatMessageDomain>();
-            
-            serviceCollection.AddScoped<IChatMediaDomain, ChatMediaDomain>();
-
-            serviceCollection.AddScoped<IvOnlineUserListDomain, vOnlineUserListDomain>();
-            
-            
-            serviceCollection.AddScoped<IPostDomain, PostDomain>();
+            serviceCollection.AddScoped<IPostMediaDomain, PostMediaDomain>();
             
             serviceCollection.AddScoped<IPostMessageDomain, PostMessageDomain>();
             
@@ -79,13 +71,36 @@ namespace FBRxweb.Api.Bootstrap
             
             serviceCollection.AddScoped<IPostShareDomain, PostShareDomain>();
             
-            serviceCollection.AddScoped<IPostMessageShareDomain, PostMessageShareDomain>();
+         
+            serviceCollection.AddScoped<IChatMediaDomain, ChatMediaDomain>();
             
-            serviceCollection.AddScoped<IPostMessageLikeDomain, PostMessageLikeDomain>();
+            serviceCollection.AddScoped<IChatMessageDomain, ChatMessageDomain>();
             
-            serviceCollection.AddScoped<IPostMessageCommentDomain, PostMessageCommentDomain>();
-       
+           
+            
+            serviceCollection.AddScoped<IvCheckLikeUserDomain, vCheckLikeUserDomain>();
+            
+            serviceCollection.AddScoped<IvCheckCommentUserDomain, vCheckCommentUserDomain>();
+            
+            serviceCollection.AddScoped<IvCheckShareUserDomain, vCheckShareUserDomain>();
             #endregion DomainService
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
     }

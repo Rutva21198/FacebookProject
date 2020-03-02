@@ -16,10 +16,16 @@ namespace FBRxweb.BoundedContext.Main
         public PostContext(MainSqlDbContext sqlDbContext,  IOptions<DatabaseConfig> databaseConfig, IHttpContextAccessor contextAccessor,ITenantDbConnectionInfo tenantDbConnection): base(sqlDbContext, databaseConfig.Value, contextAccessor,tenantDbConnection){ }
 
             #region DbSets
-            		public DbSet<Post> Post { get; set; }
-		public DbSet<PostMessage> PostMessage { get; set; }
+            		public DbSet<PostMessage> Post { get; set; }
+		public DbSet<PostMedia> PostMessage { get; set; }
+            		public DbSet<vAllPost> vAllPost { get; set; }
+            		public DbSet<PostLike> PostLike { get; set; }
+		public DbSet<PostComment> PostComment { get; set; }
+		public DbSet<PostShare> PostShare { get; set; }
+            		public DbSet<vCheckLikeUser> vCheckLikeUser { get; set; }
+		public DbSet<vCheckCommentUser> vCheckCommentUser { get; set; }
+		public DbSet<vCheckShareUser> vCheckShareUser { get; set; }
             #endregion DbSets
-
 
     }
 

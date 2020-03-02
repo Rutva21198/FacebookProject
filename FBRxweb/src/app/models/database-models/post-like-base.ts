@@ -4,17 +4,10 @@ import { gridColumn } from "@rxweb/grid"
 
 export class PostLikeBase {
 
-//#region likeId Prop
+//#region postLikeId Prop
         @prop()
-        likeId : number;
-//#endregion likeId Prop
-
-
-//#region postId Prop
-        @range({minimumNumber:1,maximumNumber:2147483647})
-        @required()
-        postId : number;
-//#endregion postId Prop
+        postLikeId : number;
+//#endregion postLikeId Prop
 
 
 //#region userId Prop
@@ -22,6 +15,13 @@ export class PostLikeBase {
         @required()
         userId : number;
 //#endregion userId Prop
+
+
+//#region postId Prop
+        @range({minimumNumber:1,maximumNumber:2147483647})
+        @required()
+        postId : number;
+//#endregion postId Prop
 
 
 

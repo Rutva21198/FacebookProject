@@ -1,23 +1,21 @@
 import {FacebookUserBase} from '../database-models/facebook-user-base';
 import {FBApplicationObjectBase} from '../database-models/f-b-application-object-base';
-import {LogActivityBase} from '../database-models/log-activity-base';
-import {PostCommentBase} from '../database-models/post-comment-base';
-import {PostLikeBase} from '../database-models/post-like-base';
 import {PostShareBase} from '../database-models/post-share-base';
+import {LogActivityBase} from '../database-models/log-activity-base';
 import {ProfilePhotoBase} from '../database-models/profile-photo-base';
 import {FacebookUserDetailBase} from '../database-models/facebook-user-detail-base';
 import {FacebookUserWorkBase} from '../database-models/facebook-user-work-base';
-import {PostMessageLikeBase} from '../database-models/post-message-like-base';
-import {PostMessageCommentBase} from '../database-models/post-message-comment-base';
-import {PostMessageShareBase} from '../database-models/post-message-share-base';
-import {PostBase} from '../database-models/post-base';
+import {UserPostBase} from '../database-models/user-post-base';
+import {PostMediaBase} from '../database-models/post-media-base';
 import {PostMessageBase} from '../database-models/post-message-base';
 import {ChatMediaBase} from '../database-models/chat-media-base';
 import {ChatMedia1Base} from '../database-models/chat-media-1-base';
 import {ChatMessageBase} from '../database-models/chat-message-base';
 import {ChatMessages1Base} from '../database-models/chat-messages-1-base';
 import {CoverPhotoBase} from '../database-models/cover-photo-base';
+import {PostLikeBase} from '../database-models/post-like-base';
 import {EducationDetailBase} from '../database-models/education-detail-base';
+import {PostCommentBase} from '../database-models/post-comment-base';
 //Generated Imports
 export class FacebookUser extends FacebookUserBase 
 {
@@ -29,18 +27,12 @@ export class FacebookUser extends FacebookUserBase
 //#region fBApplicationObject Prop
 fBApplicationObject : FBApplicationObjectBase;
 //#endregion fBApplicationObject Prop
-//#region logActivities Prop
-logActivities : LogActivityBase[];
-//#endregion logActivities Prop
-//#region postComments Prop
-postComments : PostCommentBase[];
-//#endregion postComments Prop
-//#region postLikes Prop
-postLikes : PostLikeBase[];
-//#endregion postLikes Prop
 //#region postShares Prop
 postShares : PostShareBase[];
 //#endregion postShares Prop
+//#region logActivities Prop
+logActivities : LogActivityBase[];
+//#endregion logActivities Prop
 //#region profilePhotos Prop
 profilePhotos : ProfilePhotoBase[];
 //#endregion profilePhotos Prop
@@ -50,18 +42,13 @@ facebookUserDetails : FacebookUserDetailBase[];
 //#region facebookUserWorks Prop
 facebookUserWorks : FacebookUserWorkBase[];
 //#endregion facebookUserWorks Prop
-//#region postMessageLikes Prop
-postMessageLikes : PostMessageLikeBase[];
-//#endregion postMessageLikes Prop
-//#region postMessageComments Prop
-postMessageComments : PostMessageCommentBase[];
-//#endregion postMessageComments Prop
-//#region postMessageShares Prop
-postMessageShares : PostMessageShareBase[];
-//#endregion postMessageShares Prop
-//#region posts Prop
-posts : PostBase[];
-//#endregion posts Prop
+
+//#region userPosts Prop
+        userPosts : UserPostBase[];
+//#endregion userPosts Prop
+//#region postMedias Prop
+postMedias : PostMediaBase[];
+//#endregion postMedias Prop
 //#region postMessages Prop
 postMessages : PostMessageBase[];
 //#endregion postMessages Prop
@@ -80,11 +67,21 @@ chatMessages1 : ChatMessageBase[];
 //#region coverPhotos Prop
 coverPhotos : CoverPhotoBase[];
 //#endregion coverPhotos Prop
+//#region postLikes Prop
+postLikes : PostLikeBase[];
+//#endregion postLikes Prop
 //#region educationDetails Prop
 educationDetails : EducationDetailBase[];
 //#endregion educationDetails Prop
+//#region postComments Prop
+postComments : PostCommentBase[];
+//#endregion postComments Prop
 
 //#endregion Generated Reference Properties
+
+
+
+
 
 
 

@@ -88,6 +88,7 @@ C:\Users\radix\source\repos\FBRxweb\FBRxweb.Api\obj\Debug\netcoreapp3.1\FBRxweb.
 C:\Users\radix\source\repos\FBRxweb\FBRxweb.Api\obj\Debug\netcoreapp3.1\FBRxweb.Api.csproj.CopyComplete
 C:\Users\radix\source\repos\FBRxweb\FBRxweb.Api\obj\Debug\netcoreapp3.1\FBRxweb.Api.dll
 C:\Users\radix\source\repos\FBRxweb\FBRxweb.Api\obj\Debug\netcoreapp3.1\FBRxweb.Api.pdb
+C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\web.config
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -147,7 +148,6 @@ C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 C:\Users\radix\Desktop\FacebookProject\FBRxweb\FBRxweb.Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll

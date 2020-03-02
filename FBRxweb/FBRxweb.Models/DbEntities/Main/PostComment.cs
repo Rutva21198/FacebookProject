@@ -11,13 +11,13 @@ namespace FBRxweb.Models.Main
     [Table("PostComments",Schema="dbo")]
     public partial class PostComment
     {
-		#region CommentId Annotations
+		#region PostCommentId Annotations
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [System.ComponentModel.DataAnnotations.Key]
-		#endregion CommentId Annotations
+		#endregion PostCommentId Annotations
 
-        public int CommentId { get; set; }
+        public int PostCommentId { get; set; }
 
 		#region Comment Annotations
 
@@ -25,15 +25,6 @@ namespace FBRxweb.Models.Main
 		#endregion Comment Annotations
 
         public string Comment { get; set; }
-
-		#region PostId Annotations
-
-        [Range(1,int.MaxValue)]
-        [Required]
-        [RelationshipTableAttribue("Posts","dbo","","PostId")]
-		#endregion PostId Annotations
-
-        public int PostId { get; set; }
 
 		#region UserId Annotations
 
@@ -44,6 +35,15 @@ namespace FBRxweb.Models.Main
 
         public int UserId { get; set; }
 
+		#region PostId Annotations
+
+        [Range(1,int.MaxValue)]
+        [Required]
+        [RelationshipTableAttribue("UserPosts","dbo","","PostId")]
+		#endregion PostId Annotations
+
+        public int PostId { get; set; }
+
 		#region FacebookUser Annotations
 
         [ForeignKey(nameof(UserId))]
@@ -52,13 +52,13 @@ namespace FBRxweb.Models.Main
 
         public virtual FacebookUser FacebookUser { get; set; }
 
-		#region Post Annotations
+		#region UserPost Annotations
 
         [ForeignKey(nameof(PostId))]
-        [InverseProperty(nameof(FBRxweb.Models.Main.Post.PostComments))]
-		#endregion Post Annotations
+        [InverseProperty(nameof(FBRxweb.Models.Main.UserPost.PostComments))]
+		#endregion UserPost Annotations
 
-        public virtual Post Post { get; set; }
+        public virtual UserPost UserPost { get; set; }
 
 
         public PostComment()

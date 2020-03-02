@@ -4,10 +4,10 @@ import { gridColumn } from "@rxweb/grid"
 
 export class PostCommentBase {
 
-//#region commentId Prop
+//#region postCommentId Prop
         @prop()
-        commentId : number;
-//#endregion commentId Prop
+        postCommentId : number;
+//#endregion postCommentId Prop
 
 
 //#region comment Prop
@@ -16,18 +16,18 @@ export class PostCommentBase {
 //#endregion comment Prop
 
 
-//#region postId Prop
-        @range({minimumNumber:1,maximumNumber:2147483647})
-        @required()
-        postId : number;
-//#endregion postId Prop
-
-
 //#region userId Prop
         @range({minimumNumber:1,maximumNumber:2147483647})
         @required()
         userId : number;
 //#endregion userId Prop
+
+
+//#region postId Prop
+        @range({minimumNumber:1,maximumNumber:2147483647})
+        @required()
+        postId : number;
+//#endregion postId Prop
 
 
 
