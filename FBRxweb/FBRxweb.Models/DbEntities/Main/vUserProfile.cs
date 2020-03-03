@@ -10,13 +10,13 @@ namespace FBRxweb.Models.Main
     [Table("vUserProfile",Schema="dbo")]
     public partial class vUserProfile
     {
-		#region UserId Annotations
+		#region UserID Annotations
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [System.ComponentModel.DataAnnotations.Key]
-		#endregion UserId Annotations
+		#endregion UserID Annotations
 
-        public int UserId { get; set; }
+        public int UserID { get; set; }
 
 
         public string FirstName { get; set; }
@@ -40,7 +40,7 @@ namespace FBRxweb.Models.Main
         public string cover { get; set; }
 
 
-        public string Profilephoto { get; set; }
+        public string ProfilePhoto { get; set; }
 
 
         public vUserProfile()
