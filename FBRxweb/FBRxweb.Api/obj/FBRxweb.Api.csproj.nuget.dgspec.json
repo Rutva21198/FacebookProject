@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\123\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj": {}
+    "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj": {}
   },
   "projects": {
-    "D:\\123\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj": {
+    "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\123\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj",
+        "projectUniqueName": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj",
         "projectName": "FBRxweb.Api",
-        "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj",
+        "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Api\\FBRxweb.Api.csproj",
         "packagesPath": "C:\\Users\\radix\\.nuget\\packages\\",
-        "outputPath": "D:\\123\\FBRxweb\\FBRxweb.Api\\obj\\",
+        "outputPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,20 +27,20 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj"
               },
-              "D:\\123\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj"
               },
-              "D:\\123\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj"
               },
-              "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj"
               },
-              "D:\\123\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj"
               }
             }
           }
@@ -97,14 +97,14 @@
         }
       }
     },
-    "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
+    "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj",
+        "projectUniqueName": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj",
         "projectName": "FBRxweb.BoundedContext",
-        "projectPath": "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj",
+        "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj",
         "packagesPath": "C:\\Users\\radix\\.nuget\\packages\\",
-        "outputPath": "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\obj\\",
+        "outputPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -120,8 +120,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj"
               }
             }
           }
@@ -167,14 +167,14 @@
         }
       }
     },
-    "D:\\123\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj": {
+    "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\123\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj",
         "projectName": "FBRxweb.Domain",
-        "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj",
+        "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Domain\\FBRxweb.Domain.csproj",
         "packagesPath": "C:\\Users\\radix\\.nuget\\packages\\",
-        "outputPath": "D:\\123\\FBRxweb\\FBRxweb.Domain\\obj\\",
+        "outputPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -190,17 +190,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj"
               },
-              "D:\\123\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj"
               },
-              "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj"
               },
-              "D:\\123\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj"
               }
             }
           }
@@ -235,14 +235,14 @@
         }
       }
     },
-    "D:\\123\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj": {
+    "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\123\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj",
         "projectName": "FBRxweb.Infrastructure",
-        "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Infrastructure\\FBRxweb.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\radix\\.nuget\\packages\\",
-        "outputPath": "D:\\123\\FBRxweb\\FBRxweb.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -258,14 +258,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj"
               },
-              "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj"
               },
-              "D:\\123\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj"
               }
             }
           }
@@ -322,14 +322,14 @@
         }
       }
     },
-    "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
+    "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj",
+        "projectUniqueName": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj",
         "projectName": "FBRxweb.Models",
-        "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj",
+        "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj",
         "packagesPath": "C:\\Users\\radix\\.nuget\\packages\\",
-        "outputPath": "D:\\123\\FBRxweb\\FBRxweb.Models\\obj\\",
+        "outputPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -392,14 +392,14 @@
         }
       }
     },
-    "D:\\123\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj": {
+    "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\123\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj",
+        "projectUniqueName": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj",
         "projectName": "FBRxweb.UnitOfWork",
-        "projectPath": "D:\\123\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj",
+        "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.UnitOfWork\\FBRxweb.UnitOfWork.csproj",
         "packagesPath": "C:\\Users\\radix\\.nuget\\packages\\",
-        "outputPath": "D:\\123\\FBRxweb\\FBRxweb.UnitOfWork\\obj\\",
+        "outputPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.UnitOfWork\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -415,8 +415,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
-                "projectPath": "D:\\123\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj"
+              "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj": {
+                "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.BoundedContext\\FBRxweb.BoundedContext.csproj"
               }
             }
           }

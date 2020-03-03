@@ -30,3 +30,11 @@ D:\123\FBRxweb\FBRxweb.Models\obj\Debug\netcoreapp3.1\FBRxweb.Models.AssemblyInf
 D:\123\FBRxweb\FBRxweb.Models\obj\Debug\netcoreapp3.1\FBRxweb.Models.AssemblyInfo.cs
 D:\123\FBRxweb\FBRxweb.Models\obj\Debug\netcoreapp3.1\FBRxweb.Models.dll
 D:\123\FBRxweb\FBRxweb.Models\obj\Debug\netcoreapp3.1\FBRxweb.Models.pdb
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.Models\bin\Debug\netcoreapp3.1\FBRxweb.Models.deps.json
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.Models\bin\Debug\netcoreapp3.1\FBRxweb.Models.dll
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.Models\bin\Debug\netcoreapp3.1\FBRxweb.Models.pdb
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.Models\obj\Debug\netcoreapp3.1\FBRxweb.Models.csprojAssemblyReference.cache
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.Models\obj\Debug\netcoreapp3.1\FBRxweb.Models.AssemblyInfoInputs.cache
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.Models\obj\Debug\netcoreapp3.1\FBRxweb.Models.AssemblyInfo.cs
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.Models\obj\Debug\netcoreapp3.1\FBRxweb.Models.dll
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.Models\obj\Debug\netcoreapp3.1\FBRxweb.Models.pdb

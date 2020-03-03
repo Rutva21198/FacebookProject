@@ -74,12 +74,12 @@ namespace FBRxweb.Models.Main
 
         public virtual FacebookUser FacebookUser { get; set; }
 
-		#region PostComments Annotations
+		#region PostShares Annotations
 
         [InverseProperty("UserPost")]
-		#endregion PostComments Annotations
+		#endregion PostShares Annotations
 
-        public virtual ICollection<PostComment> PostComments { get; set; }
+        public virtual ICollection<PostShare> PostShares { get; set; }
 
 		#region PostLikes Annotations
 
@@ -88,19 +88,19 @@ namespace FBRxweb.Models.Main
 
         public virtual ICollection<PostLike> PostLikes { get; set; }
 
-		#region PostShares Annotations
+		#region PostComments Annotations
 
         [InverseProperty("UserPost")]
-		#endregion PostShares Annotations
+		#endregion PostComments Annotations
 
-        public virtual ICollection<PostShare> PostShares { get; set; }
+        public virtual ICollection<PostComment> PostComments { get; set; }
 
 
         public UserPost()
         {
-			PostComments = new HashSet<PostComment>();
-			PostLikes = new HashSet<PostLike>();
 			PostShares = new HashSet<PostShare>();
+			PostLikes = new HashSet<PostLike>();
+			PostComments = new HashSet<PostComment>();
         }
 	}
 }

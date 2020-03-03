@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {}
+    "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {}
   },
   "projects": {
-    "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
+    "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj",
+        "projectUniqueName": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj",
         "projectName": "FBRxweb.Models",
-        "projectPath": "D:\\123\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj",
+        "projectPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\FBRxweb.Models.csproj",
         "packagesPath": "C:\\Users\\radix\\.nuget\\packages\\",
-        "outputPath": "D:\\123\\FBRxweb\\FBRxweb.Models\\obj\\",
+        "outputPath": "C:\\Users\\radix\\source\\repos\\FacebookProject02032020\\FBRxweb\\FBRxweb.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radix\\AppData\\Roaming\\NuGet\\NuGet.Config",

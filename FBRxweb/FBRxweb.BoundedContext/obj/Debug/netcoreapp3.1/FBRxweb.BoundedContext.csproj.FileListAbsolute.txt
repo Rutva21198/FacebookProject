@@ -42,3 +42,14 @@ D:\123\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedCon
 D:\123\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.csproj.CopyComplete
 D:\123\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.dll
 D:\123\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.pdb
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.BoundedContext.deps.json
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.BoundedContext.dll
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.BoundedContext.pdb
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.Models.dll
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\bin\Debug\netcoreapp3.1\FBRxweb.Models.pdb
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.csprojAssemblyReference.cache
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.AssemblyInfoInputs.cache
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.AssemblyInfo.cs
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.csproj.CopyComplete
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.dll
+C:\Users\radix\source\repos\FacebookProject02032020\FBRxweb\FBRxweb.BoundedContext\obj\Debug\netcoreapp3.1\FBRxweb.BoundedContext.pdb

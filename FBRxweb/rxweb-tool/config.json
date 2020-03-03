@@ -7,7 +7,7 @@
 	"unitOfWork": "FBRxweb.UnitOfWork",
     "infrastructure": "FBRxweb.Infrastructure",
     "azureFunctionHttp":"",
-    "portal":"",
+    "portal":"FBRxweb-portal",
     "azureFunctionBackground":""
   },
   "path": {

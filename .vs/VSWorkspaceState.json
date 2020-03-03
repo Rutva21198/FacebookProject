@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FBRxweb",
+    "\\FBRxweb\\FBRxweb.Models",
+    "\\FBRxweb\\FBRxweb.Models\\DbEntities",
+    "\\FBRxweb\\FBRxweb.Models\\DbEntities\\Main"
   ],
+  "SelectedNode": "\\FBRxweb\\FBRxweb.Models\\DbEntities\\Main\\UserPost.cs",
   "PreviewInSolutionExplorer": false
 }
